@@ -15,10 +15,11 @@
         >
 
         <v-btn href="tel:+33618662919" color="primary" text x-large class="small-screen">
+          <v-icon medium class="mr-2e"> mdi-phone</v-icon>
           06 18 66 29 19
         </v-btn>
         <v-btn href="tel:+33618662919" color="primary" class="small-screen-active" text small>
-          <v-icon small class="mr-2e"> mdi-phone-forward-outline </v-icon>
+          <v-icon small class="mr-2e"> mdi-phone </v-icon>
           06 18 66 29 19
         </v-btn>
       </div>

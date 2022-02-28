@@ -48,7 +48,7 @@
         </v-row>
       </v-col>
       <v-col cols="12" md="4" sm="12" class="mt-4">
-        <v-card  id="formDevis">
+        <v-card id="formDevis">
           <v-card-title class="text-primary"> Devis Gratuit </v-card-title>
           <v-card-text>
             <v-row>
@@ -65,7 +65,6 @@
           <v-card-text>
             <v-form>
               <v-select
-
                 :items="[
                   'Isolation des combles',
                   'Aménagement de combles',
@@ -363,7 +362,8 @@
           <v-card-title> Adresse </v-card-title>
           <v-card-text>
             <address>
-              Adresse: 3 abenue de 25 aout 1944 <br />
+              <v-icon>mdi-map-marker-radius-outline</v-icon> Adresse: 3 abenue
+              de 25 aout 1944 <br />
               Choisy Le Roi
             </address>
           </v-card-text>
@@ -373,8 +373,9 @@
         <v-card height="200px">
           <v-card-title> Coordonnées de contact </v-card-title>
           <v-card-text>
-            Email: auditsrenovation@gmail.com <br />
-            téléphone : 06 18 66 29 19
+            <v-icon>mdi-email-send-outline</v-icon> Email:
+            auditsrenovation@gmail.com <br />
+            <v-icon>mdi-phone</v-icon> téléphone : 06 18 66 29 19
             <v-btn color="primary" href="#formDevis">demander un devis</v-btn>
           </v-card-text>
         </v-card>
@@ -489,39 +490,7 @@
       <hr />
     </v-row>
     <div>
-      <v-footer>
-        <v-row>
-          <v-col cols="12" md="4">
-            <h3 class="h3 m-4">Isolation thermique</h3>
-            <v-divider class="mx-4" color="white"></v-divider>
-            <ul v-for="i in itemsIsolation" :key="i">
-              <li class="list-unstyled">
-                <NuxtLink to="/isolation-thermique">
-                  {{ i }}
-                </NuxtLink>
-              </li>
-            </ul>
-          </v-col>
-          <v-col cols="12" md="4">
-            <h3 class="h3 m-4">Toiture</h3>
-            <v-divider class="mx-4" color="white"></v-divider>
-            <ul v-for="i in itemsToiture" :key="i">
-              <li class="list-unstyled">{{ i }}</li>
-            </ul>
-          </v-col>
-          <v-col cols="12" md="4">
-            <h3 class="h3 m-4">Rénovation</h3>
-            <v-divider class="mx-4" color="white"></v-divider>
-            <ul v-for="i in itemsRenovation" :key="i">
-              <li class="list-unstyled">{{ i }}</li>
-            </ul>
-          </v-col>
-          <v-divider class="mx-4" color="white"></v-divider>
-          <v-col class="text-center" cols="12">
-            {{ new Date().getFullYear() }} — <strong>AUDITS Rénovation</strong>
-          </v-col>
-        </v-row>
-      </v-footer>
+      <Footer />
     </div>
   </div>
 </template>
@@ -577,6 +546,18 @@ export default {
       url: "https://auditsrenovation.fr",
       img: require("~/static/ravalement.jpg"),
     },
+    imagesRenovation: [
+      "bureau.jpg",
+      "bain.jpg",
+      "cuisine.jpg",
+      "bainmarbre.jpg",
+    ],
+    imagesRavalement: [
+      "ite.jpg",
+      "ravalement.jpg",
+      "itecomble.jpg",
+      "couverture.jpg",
+    ],
     avis: [
       {
         img: require("~/static/avatar1.jpg"),
@@ -604,39 +585,6 @@ export default {
         date: "Le 03/10/2021",
       },
     ],
-    itemsIsolation: [
-      "— Aménagement de combles",
-      "— Isolation comble perdu",
-      "— Isolation des combles aménagés par l’extérieur",
-      "— Isolation des combles aménagés par l’intérieur",
-      "— Isolation thermique par l’extérieur",
-      "— Isolation thermique par l’intérieur",
-    ],
-    itemsToiture: [
-      "— Traitement de charpentes",
-      "— Remaniement et rénovation de toiture",
-      "— Hydrofuge de toiture",
-      "— Les gouttières et descentes",
-      "— Velux",
-    ],
-    itemsRenovation: [
-      "— Travaux de peinture",
-      "— Menuiseries, fenêtres, portes",
-      "— Carrelage, parquets, revêtements de sol",
-      "— Ventilation, VMC",
-    ],
-    imagesRenovation: [
-      "bureau.jpg",
-      "bain.jpg",
-      "cuisine.jpg",
-      "bainmarbre.jpg",
-    ],
-    imagesRavalement: [
-      "ite.jpg",
-      "ravalement.jpg",
-      "itecomble.jpg",
-      "couverture.jpg",
-    ],
   }),
   methods: {
     calme() {
@@ -646,7 +594,6 @@ export default {
 };
 </script>
 <style scoped>
-
 .bg-img {
   color: rgb(252, 252, 252);
   font-size: 20px;

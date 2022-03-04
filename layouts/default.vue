@@ -2,25 +2,44 @@
   <v-app id="app">
     <v-app-bar fixed app>
       <v-toolbar-title>
-       <NuxtLink to="/">
+        <NuxtLink to="/">
           <v-img src="auditsrenovationlogo.png" class="logo"></v-img>
-       </NuxtLink>
+        </NuxtLink>
       </v-toolbar-title>
 
       <v-spacer />
       <div>
-        <v-btn disabled text x-large class="small-screen">
-          <v-icon medium class="mr-2"> mdi-phone-forwnkard-outline </v-icon>
-          Contactez-nous</v-btn
-        >
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
 
-        <v-btn href="tel:+33618662919" color="primary" text x-large class="small-screen">
-          <v-icon medium class="mr-2e"> mdi-phone</v-icon>
-          06 18 66 29 19
-        </v-btn>
-        <v-btn href="tel:+33618662919" color="primary" class="small-screen-active" text small>
-          <v-icon small class="mr-2e"> mdi-phone </v-icon>
-          06 18 66 29 19
+               color="#0095f1"
+              dark
+              v-bind="attrs"
+              v-on="on"
+              href="tel:+33618662919"
+              x-large
+              class="small-screen"
+            >
+              <v-icon medium> mdi-phone</v-icon>
+              06 18 66 29 19
+            </v-btn>
+          </template>
+          <span>Lancer l'appel</span>
+        </v-tooltip>
+
+        <v-btn
+
+          href="tel:+33618662919"
+          color="#0095f1"
+          class="small-screen-active"
+          dark
+          small
+        >
+          <span class="mt-2">
+            <v-icon small> mdi-phone </v-icon>
+            06 18 66 29 19
+          </span>
         </v-btn>
       </div>
     </v-app-bar>
@@ -43,12 +62,14 @@ export default {
 };
 </script>
 <style scoped>
-#app{
-   user-select: none;
+#app {
+  user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+
 }
+
 .theme--light.v-app-bar.v-toolbar.v-sheet {
   background-color: #fffdfd;
 }
@@ -60,7 +81,10 @@ export default {
   display: none;
 }
 .logo {
-  width: 250px;
+  width: 180px;
+}
+.small-screen:hover {
+  text-decoration: none;
 }
 @media (max-width: 575.98px) {
   .small-screen {
@@ -69,13 +93,16 @@ export default {
   .small-screen-active {
     display: block;
   }
+  .small-screen-active:hover {
+    text-decoration: none;
+  }
   .logo {
     width: 150px;
   }
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
-  .logo{
+  .logo {
     width: 170px;
   }
- }
+}
 </style>

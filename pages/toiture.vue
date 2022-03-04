@@ -158,4 +158,9 @@ export default {
 .deperdition {
   max-width: 600px;
 }
+@media (max-width:575.98px){
+  .deperdition{
+      max-width: 300px;
+  }
+}
 </style>

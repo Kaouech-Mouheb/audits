@@ -4,6 +4,7 @@
       <div class="block-value"></div>
 
       <v-col cols="12" md="6" sm="12" class="margin-bg">
+        <h1>AUDITS rénovation</h1>
         <h2 class="h2">
           Vous avez un projet <strong>d'isolation themrique </strong> ou de
           <strong>rénovation</strong> ?
@@ -200,7 +201,7 @@ export default {
     auditsSeo: {
       title: "AUDITS rénovation",
       description:
-        "pour tous vos travaux de rénovation , isolation, travaux de couverture ou de façade, audits rénovation répond à vos besoins devis gratuit + diagnostics techniques ",
+        "AUDITS rénovation | Pour tous vos travaux de rénovation , isolation, travaux de couverture ou de façade, audits rénovation répond à vos besoins devis gratuit + diagnostics techniques ",
       url: "https://auditsrenovation.fr",
       img: require("~/static/ravalement.jpg"),
     },

@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="12" md="12">
-          <h1 class="text-center text-primary">Rénovation de votre habitat</h1>
+          <h1 class="text-center text-primary">AUDITS rénovation, Rénovation de votre habitat</h1>
         </v-col>
       </v-row>
       <v-row justify="space-between">

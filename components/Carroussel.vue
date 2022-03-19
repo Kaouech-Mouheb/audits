@@ -78,9 +78,6 @@ export default {
 
 }
 
-.carroussel {
-  padding: 15px;
-}
 .carroussel-text {
   padding: 40px;
   background: white;
@@ -100,7 +97,7 @@ export default {
     height: 400px !important;
   }
   .carroussel {
-    margin-top: 140px;
+    margin-top: 20px;
   }
   .carroussel-text {
   padding: 10px;

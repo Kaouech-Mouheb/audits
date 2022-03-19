@@ -44,9 +44,9 @@
       </div>
     </v-app-bar>
     <v-main>
-      <v-container fluid>
+      <div class="container-fluid">
         <Nuxt />
-      </v-container>
+      </div>
     </v-main>
   </v-app>
 </template>
@@ -67,7 +67,7 @@ export default {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-
+width: 100%;
 }
 
 .theme--light.v-app-bar.v-toolbar.v-sheet {

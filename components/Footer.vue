@@ -1,5 +1,5 @@
 <template>
-  <v-footer>
+  <v-footer class="bg-light">
     <v-container>
       <v-row>
         <v-col cols="12" md="4">
@@ -103,8 +103,10 @@
       </v-row>
       <v-row justify="center">
         <v-col class="text-center" cols="12">
-          {{ new Date().getFullYear() }} — <strong>AUDITS Rénovation</strong>
+         <span class="fo-span">
+            {{ new Date().getFullYear() }} — <strong>AUDITS Rénovation</strong>
           <NuxtLink to="/mentions-legales"> Mentions Légales </NuxtLink>
+         </span>
         </v-col>
       </v-row>
     </v-container>
@@ -137,3 +139,13 @@ export default {
   }),
 };
 </script>
+<style scoped>
+@media (max-width: 575.98px){
+  li{
+    font-size: 10px;
+  }
+  .fo-span{
+    font-size: 11px;
+  }
+}
+</style>

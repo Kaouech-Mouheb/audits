@@ -1,9 +1,10 @@
 <template>
-  <v-container fluid class="rating">
-    <v-row class="bg-img" justify="center">
-      <div class="block-value"></div>
+  <div class="bg-img rating">
+     <div class="container-fluid block-value"></div>
+    <div class="d-flex justify-content-center row">
 
-      <v-col cols="12" md="6" sm="12" class="margin-bg">
+
+      <div class="col-md-6 col-sm-12 margin-bg">
         <h1>AUDITS rénovation</h1>
         <h2 class="h2">
           Vous avez un projet <strong>d'isolation themrique </strong> ou de
@@ -37,8 +38,8 @@
             lazy-validation
             @submit.prevent="sendEmailTel"
           >
-            <v-row>
-              <v-col cols="12" md="4" sm="7">
+            <div class="row">
+              <div class="col-md-4 col-sm-7">
                 <v-text-field
                   v-model="client.name"
                   :rules="Rules.name"
@@ -49,8 +50,8 @@
                   label="Votre nom"
                   solo
                 ></v-text-field>
-              </v-col>
-              <v-col cols="12" md="6" sm="5">
+              </div>
+              <div class="col-md-4 col-sm-7">
                 <v-text-field
                   v-model="client.tel"
                   name="tel"
@@ -64,7 +65,7 @@
                   type="number"
                   hint="cliquez sur le button"
                 ></v-text-field>
-              </v-col>
+              </div>
 
               <v-col cols="12" class="mt-btn-rplmoi">
                 <v-btn
@@ -78,14 +79,14 @@
                   100% de clients satisfaits ! Devis Gratuit sans engagement.
                 </div>
               </v-col>
-            </v-row>
+            </div>
           </v-form>
         </div>
-      </v-col>
+      </div>
       <v-col cols="12" md="4" sm="12" class="mt-4">
         <FormulaireDevis />
       </v-col>
-    </v-row>
+    </div>
     <div>
       <Carroussel />
     </div>
@@ -150,7 +151,7 @@
         Un chargé d'affaire vous contactera dans les meilleurs délais
       </v-alert>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -279,6 +280,7 @@ export default {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  width:100%;
   height: 900px;
 }
 
@@ -291,7 +293,7 @@ export default {
 }
 .block-value {
   position: absolute;
-  width: 100%;
+  right:1px;
   height: 900px;
   background: #0095f1;
   background: linear-gradient(

@@ -1,5 +1,5 @@
 <template>
-  <v-row class="m-4 small-screen">
+  <div class="small-screen">
       <v-card>
         <v-row justify="center">
           <v-col cols="12" md="5">
@@ -133,7 +133,7 @@
           </v-col>
         </v-row>
       </v-card>
-    </v-row>
+    </div>
 </template>
 <style scoped>
 .bg-color{

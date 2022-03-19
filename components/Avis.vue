@@ -1,8 +1,8 @@
 <template>
-  <div class="m-4">
-    <v-row justify="center">
-      <v-col cols="12" md="3" sm="12">
-        <v-card height="200px">
+  <div>
+    <div class="d-flex justify-content-center row">
+      <div class="col-md-3 col-sm-12">
+        <v-card height="220px">
           <div class="text-center">
             <img src="decennale.png" class="logo-decennal" alt="" />
           </div>
@@ -12,9 +12,9 @@
             apparaissent après la réception des travaux pendant 10 ans.
           </v-card-text>
         </v-card>
-      </v-col>
-      <v-col cols="12" md="3" sm="12">
-        <v-card height="200px">
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <v-card height="220px">
           <v-card-title> Coordonnées de contact </v-card-title>
           <v-card-text>
             <address>
@@ -31,10 +31,10 @@
             <v-btn color="primary" href="#formDevis">demander un devis</v-btn>
           </v-card-text>
         </v-card>
-      </v-col>
+      </div>
 
-      <v-col cols="12" md="3" sm="12" class="mt-2">
-        <v-card height="200px" color="blue darken-3" class="text-light">
+      <div class="col-md-3 col-sm-12 mt-2">
+        <v-card height="220px" color="blue darken-3" class="text-light">
           <v-row>
             <v-col>
               <h3 class="m-4">
@@ -53,7 +53,7 @@
               <v-dialog v-model="dialogAvis" max-width="500">
                 <template v-slot:activator="{ on, attrs }">
                   <small
-                    ><a v-bind="attrs" v-on="on" class="text-light m-4"
+                    ><a v-bind="attrs" v-on="on" class="text-light avis-voir m-4"
                       >voir les avis</a
                     ></small
                   >
@@ -161,8 +161,8 @@
             </v-col>
           </v-row>
         </v-card>
-      </v-col>
-    </v-row>
+      </div>
+    </div>
     <div>
       <div v-if="alertAvis" class="alert">
         <v-alert dense type="success">
@@ -303,6 +303,9 @@ export default {
     width: 130px;
 
     margin: 0 auto 0 auto;
+  }
+  .avis-voir{
+    margin-top: -30px;
   }
 }
 </style>

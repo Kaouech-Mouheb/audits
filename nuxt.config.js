@@ -56,6 +56,7 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
+    'nuxt-compress'
 
 
   ],
@@ -63,17 +64,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
 
-    [
-      'nuxt-compress',
-      {
-        gzip: {
-          threshold: 8192,
-        },
-        brotli: {
-          threshold: 8192,
-        },
-      },
-    ],
     'bootstrap-vue/nuxt',
     ['@nuxtjs/component-cache', {
       max: 10000,

@@ -56,7 +56,7 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    'nuxt-compress'
+
 
 
   ],
@@ -69,7 +69,7 @@ export default {
       max: 10000,
       maxAge: 1000 * 60 * 60
     }],
-    'nuxt-compress',
+
     ['nuxt-canonical', {
       baseUrl: 'https://auditsrenovation.fr'
     }],

@@ -54,8 +54,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
+
 
 
 
@@ -65,51 +64,9 @@ export default {
   modules: [
 
     'bootstrap-vue/nuxt',
-    ['@nuxtjs/component-cache', {
-      max: 10000,
-      maxAge: 1000 * 60 * 60
-    }],
-
-    ['nuxt-canonical', {
-      baseUrl: 'https://auditsrenovation.fr'
-    }],
 
   ],
 
-  sitemap: {
-    path: '/sitemap.xml', // L'emplacement de votre fichier sitemap.
-    hostname: 'https://auditsrenovation.fr', // L'adresse de votre site, que vous pouvez placer comme ici dans une variable d'environnement.
-    cacheTime: 1000 * 60 * 15, // La durée avant que le sitemap soit regénéré. Ici 15mn.
-    gzip: true,
-
-    routes: [{
-        url: '/isolation-thermique',
-        changefreq: 'daily',
-        priority: 0.8,
-        lastmod: '2022-03-07T14:14:05+00:00'
-      },
-      {
-        url: '/toiture',
-        changefreq: 'daily',
-        priority: 0.8,
-        lastmod: '2022-03-07T14:14:05+00:00'
-      }, {
-        url: '/renovation',
-        changefreq: 'daily',
-        priority: 0.8,
-        lastmod: '2022-03-07T14:14:05+00:00'
-      }, {
-        url: '/',
-        changefreq: 'daily',
-        priority: 0.8,
-        lastmod: '2022-03-07T14:14:05+00:00'
-      }
-    ]
-  },
-  robots: {
-    UserAgent: '*',
-    Sitemap: 'https://auditsrenovation.fr/sitemap'
-  },
 
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

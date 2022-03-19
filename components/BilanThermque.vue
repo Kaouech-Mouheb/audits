@@ -1,5 +1,6 @@
 <template>
-  <v-card class="card-bilan">
+<div>
+    <v-card class="card-bilan">
     <v-row justify="center">
       <v-col cols="12" md="5">
         <span class="h2 mt-4 d-block p-2 text-center text-primary"
@@ -31,6 +32,7 @@
       </v-img>
     </v-card-text>
   </v-card>
+</div>
 </template>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <div class="m-4">
     <v-row justify="center">
       <v-col cols="12" md="3" sm="12">
         <v-card height="200px">
@@ -89,7 +89,9 @@
 
                       <v-col cols="12" md="8" sm="6">
                         <small class="text-secondary">{{ av.date }}</small>
-                        <small class="text-secondary d-block">{{ av.client}}</small>
+                        <small class="text-secondary d-block">{{
+                          av.client
+                        }}</small>
                       </v-col>
                     </v-row>
                   </v-container>
@@ -142,7 +144,6 @@
                         color="success"
                         :disabled="!validFormAvis"
                         type="submit"
-
                       >
                         Envoyer votre avis
                       </v-btn>
@@ -163,16 +164,14 @@
       </v-col>
     </v-row>
     <div>
-       <div v-if="alertAvis" class="alert">
-      <v-alert dense type="success">
-        On vous remercie de nous avoir transmis vôtre <strong>
-          avis !</strong
-        >
-        Nous le publierons prochainement
-      </v-alert>
+      <div v-if="alertAvis" class="alert">
+        <v-alert dense type="success">
+          On vous remercie de nous avoir transmis vôtre <strong> avis !</strong>
+          Nous le publierons prochainement
+        </v-alert>
+      </div>
     </div>
-    </div>
-  </v-container>
+  </div>
 </template>
 <script>
 import emailjs from "emailjs-com";
@@ -182,65 +181,65 @@ export default {
       message: "",
       note: "",
     },
-        avis: [
+    avis: [
       {
         img: require("~/static/avatar5.jpg"),
         text: "Isolation du comble Rapide efficace et proprement exécutée",
         date: "Le 27/02/2022",
-         client:"André S."
+        client: "André S.",
       },
-       {
+      {
         img: require("~/static/avatar5.jpg"),
         text: "Nous avons été entièrement satisfait.",
         date: "Le 22/01/2022",
-         client:"Rachid M."
+        client: "Rachid M.",
       },
-        {
+      {
         img: require("~/static/avatar5.jpg"),
         text: "Excellent travail avec une équipe à l'écoute et compétente.",
         date: "Le 16/01/2022",
-         client:"George P."
+        client: "George P.",
       },
-          {
+      {
         img: require("~/static/avatar5.jpg"),
         text: "Grand professionnalisme et efficacité. Travail soigné et de qualité.",
         date: "Le 10/01/2022",
-         client:"Sabrine M."
+        client: "Sabrine M.",
       },
-            {
+      {
         img: require("~/static/avatar5.jpg"),
         text: "Travail et conseils professionnels au top. Merci.",
         date: "Le 10/01/2022",
-         client:"Patrick J."
+        client: "Patrick J.",
       },
       {
         img: require("~/static/avatar5.jpg"),
         text: "Trés satisfait, livraison rapide .Je recommande Audits rénovation pour isolation des combles perdus.",
         date: "Le 24/01/2022",
-        client:"Parmatzian H."
+        client: "Parmatzian H.",
       },
       {
         img: require("~/static/avatar5.jpg"),
         text: "Aucun soucis tout a été bien réalisé comme prévu",
         date: "Le 5/01/2022",
-        client:"Rachid K."
+        client: "Rachid K.",
       },
       {
         img: require("~/static/avatar5.jpg"),
         text: "Trés satisfait de résultat le meilleur rapport qualité prix, je recommande",
         date: "Le 24/11/2021",
-        client:"Daniel J."
+        client: "Daniel J.",
       },
       {
         img: require("~/static/avatar5.jpg"),
         text: "Entreprise sérieux, personnel qualifié, livraison rapide. Je recommande",
         date: "Le 03/10/2021",
-        client:"Sachat M."
+        client: "Sachat M.",
       },
     ],
     alertAvis: false,
-      validFormAvis: true,
-     dialogAvis: false,
+    validFormAvis: true,
+    dialogAvis: false,
   }),
   methods: {
     sendEmailAvis(e) {

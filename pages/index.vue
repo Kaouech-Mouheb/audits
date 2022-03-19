@@ -1,5 +1,5 @@
 <template>
-  <div class="rating">
+  <v-container fluid class="rating">
     <v-row class="bg-img" justify="center">
       <div class="block-value"></div>
 
@@ -150,7 +150,7 @@
         Un chargé d'affaire vous contactera dans les meilleurs délais
       </v-alert>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>

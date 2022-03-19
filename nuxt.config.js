@@ -64,11 +64,46 @@ export default {
   modules: [
 
     'bootstrap-vue/nuxt',
+    '@nuxtjs/sitemap',
+    'nuxt-robots',
+    'nuxt-compress'
 
   ],
 
 
-
+  sitemap: {
+    hostname: 'https://auditsrenovation.fr',
+    gzip: true,
+    exclude: [
+      '/mentions-legales',
+    ],
+    routes: [
+      '/',
+      '/isolation-thermique',
+      '/toiture',
+      '/renovation'
+    ],
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date()
+    }
+  },
+  robots: {
+    /* module options */
+    cacheTime: 1000 * 60 * 10,
+    robots: () => {
+      return []
+    }
+  },
+  'nuxt-compress': {
+    gzip: {
+      threshold: 8192,
+    },
+    brotli: {
+      threshold: 8192,
+    },
+  },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],

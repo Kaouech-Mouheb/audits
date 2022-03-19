@@ -6,14 +6,7 @@ export default {
   router: {
     base: '/'
   },
-  hooks: {
-    'render:route': function (url, result, context) {
-      result.html = result.html.replace(/ defer>/g, ' defer>')
-    },
-    'generate:page': (page) => {
-      page.html = page.html.replace(/ defer>/g, ' defer>')
-    }
-  },
+
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

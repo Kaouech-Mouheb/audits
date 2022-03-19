@@ -100,7 +100,7 @@ export default {
     height: 400px !important;
   }
   .carroussel {
-    margin-top: 100px;
+    margin-top: 140px;
   }
   .carroussel-text {
   padding: 10px;

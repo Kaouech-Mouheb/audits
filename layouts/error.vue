@@ -7,8 +7,11 @@
       {{ otherError }}
     </h1>
     <NuxtLink to="/">
-      Home page
+      Retourner à la page d'acceuil
     </NuxtLink>
+    <v-footer class="footer">
+      <Footer/>
+    </v-footer>
   </v-app>
 </template>
 
@@ -41,5 +44,11 @@ export default {
 <style scoped>
 h1 {
   font-size: 20px;
+}
+.footer{
+  position:fixed;
+  bottom:1px;
+  left:1px;
+  right:1px
 }
 </style>

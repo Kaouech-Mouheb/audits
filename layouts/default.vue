@@ -3,7 +3,7 @@
     <v-app-bar fixed app>
       <v-toolbar-title>
         <NuxtLink to="/">
-          <v-img src="auditsrenovationlogo.png" class="logo"></v-img>
+          <v-img src="auditsrenovationlogo.png" class="logo" title="AUDITS rénovation"></v-img>
         </NuxtLink>
       </v-toolbar-title>
 

@@ -134,9 +134,9 @@ export default {
   },
   data: () => ({
     isolation: {
-      title: "Isolation thermique - Travaux d'isolation thermique",
+      title: "AUDITS rénovation | Travaux d'isolation thermique",
       description:
-        "Les travaux d'isolation bénéficient d'une TVA réduite. Le taux de 5,5 % s'applique directement sur votre facture. AUDITS rénovation effectue les démarches pour vous.",
+        "audits rénovation |Les travaux d'isolation bénéficient d'une TVA réduite. Le taux de 5,5 % s'applique directement sur votre facture. AUDITS rénovation effectue les démarches pour vous.",
       img: require("~/static/isolation.jpg"),
     },
   }),

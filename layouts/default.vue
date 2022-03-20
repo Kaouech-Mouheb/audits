@@ -44,7 +44,7 @@
       </div>
     </v-app-bar>
     <v-main>
-      <div class="container-fluid">
+      <div>
         <Nuxt />
       </div>
     </v-main>

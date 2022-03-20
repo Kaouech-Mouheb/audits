@@ -110,7 +110,7 @@ export default {
       description:
         "AUDITS rénovation | besoin de réaliser des travaux de construction ou de rénovation ? AUDITS rénovation peut répondre à tous vos projets de rénovation, rénovation thermique et aménagement de comble",
       url: "https://auditsrenovation.fr",
-      img: require("~/static/bureau.jpg"),
+      img: require("~/static/appartement.jpg"),
     },
   }),
 };

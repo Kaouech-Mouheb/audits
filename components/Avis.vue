@@ -1,5 +1,13 @@
 <template>
   <div>
+    <v-row justify="center">
+      <v-col cols="12" md="5">
+        <span class="h4 mt-4 d-block p-2 text-center text-primary"
+          >A propos</span
+        >
+        <hr />
+      </v-col>
+    </v-row>
     <div class="d-flex justify-content-center row">
       <div class="col-md-3 col-sm-12">
         <v-card height="220px">
@@ -53,7 +61,10 @@
               <v-dialog v-model="dialogAvis" max-width="500">
                 <template v-slot:activator="{ on, attrs }">
                   <small
-                    ><a v-bind="attrs" v-on="on" class="text-light avis-voir m-4"
+                    ><a
+                      v-bind="attrs"
+                      v-on="on"
+                      class="text-light avis-voir m-4"
                       >voir les avis</a
                     ></small
                   >
@@ -304,7 +315,7 @@ export default {
 
     margin: 0 auto 0 auto;
   }
-  .avis-voir{
+  .avis-voir {
     margin-top: -30px;
   }
 }

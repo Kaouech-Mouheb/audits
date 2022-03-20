@@ -32,9 +32,31 @@
 export default {
   data: () => ({
     slides: [
+    
+      
       {
-        src: "ravalement.jpg",
-        title: "Isolation thermique par l'intérieur",
+        src: "appartement.jpg",
+        title: "Rénovation d'un appartement",
+        text: "Rénover sa maison pour une meilleure qualité de l'air intérieur.",
+      },
+       {
+        src: "amenagement-comble.jpg",
+        title: "Aménagement de comble",
+        text: "Transformez votre comble, le faisant passer de comble perdu et obscur à lumineuse et habitable.",
+      },
+      {
+        src: "bain.jpg",
+        title: "Rénovation d'un salle de bain",
+        text: "Transformez la salle de bains, la faisant passer d'humide et obscure à lumineuse et aérée.",
+      },
+      {
+        src: "background.jpg",
+        title: "Rénovation d'une cuisine",
+        text: "Rénover sa cuisine permet d'améliorer l'agencement de la pièce pour une utilisation optimisée.",
+      },
+        {
+        src: "isolation.jpg",
+        title: "Isolation thermique par l'extérieur",
         text: "Une bonne isolation thermique vous permet de réduire votre facture énergétique et de profiter d’une température intérieure constante et agréable",
       },
       {
@@ -47,21 +69,6 @@ export default {
         title: "Isolation thermique du comble",
         text: "Isoler vos combles perdus vous permet de faire jusqu’à 30% d’économies d’énergie.",
       },
-      {
-        src: "bureau.jpg",
-        title: "Rénovation d'un appartement",
-        text: "Rénover sa maison pour une meilleure qualité de l'air intérieur.",
-      },
-      {
-        src: "bain.jpg",
-        title: "Rénovation d'un salle de bain",
-        text: "Transformez la salle de bains, la faisant passer d'humide et obscure à lumineuse et aérée.",
-      },
-      {
-        src: "cuisine.jpg",
-        title: "Rénovation d'une cuisine",
-        text: "Rénover sa cuisine permet d'améliorer l'agencement de la pièce pour une utilisation optimisée.",
-      },
     ],
   }),
 };
@@ -70,7 +77,7 @@ export default {
 .slides-name {
   background: #0095f1;
   width: 100%;
-  padding: 100px;
+  padding: 80px;
   color: white;
   opacity: 0.8;
   text-align: center;
@@ -79,7 +86,7 @@ export default {
 }
 
 .carroussel-text {
-  padding: 40px;
+  padding: 30px;
   background: white;
   opacity: 0.7;
   width: 100%;
@@ -87,6 +94,9 @@ export default {
   top: 10px;
   font-size: 22px;
 
+}
+.carroussel {
+  margin-top:50px
 }
 @media (max-width: 575.98px) {
   .slides-name {

@@ -66,7 +66,9 @@ export default {
     'bootstrap-vue/nuxt',
     '@nuxtjs/sitemap',
     'nuxt-robots',
-    'nuxt-compress'
+    'nuxt-compress',
+    ['nuxt-canonical', { baseUrl: 'https://auditsrenovation.fr' }],
+    'nuxt-ssr-cache',
 
   ],
 
@@ -100,8 +102,30 @@ export default {
     gzip: {
       threshold: 8192,
     },
-    brotli: {
-      threshold: 8192,
+  },
+  cache: {
+
+    useHostPrefix: false,
+    pages: [
+      '/'
+    ],
+
+    key(route, context) {
+      // custom function to return cache key, when used previous
+      // properties (useHostPrefix, pages) are ignored. return
+      // falsy value to bypass the cache
+    },
+
+    store: {
+      type: 'memory',
+
+      // maximum number of pages to store in memory
+      // if limit is reached, least recently used page
+      // is removed.
+      max: 100,
+
+      // number of seconds to store this page in cache
+      ttl:1000 * 60 * 10,
     },
   },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

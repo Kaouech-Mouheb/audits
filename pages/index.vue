@@ -1,9 +1,7 @@
 <template>
   <div class="bg-img rating">
-     <div class="container-fluid block-value"></div>
+    <div class="container-fluid block-value"></div>
     <div class="d-flex justify-content-center row">
-
-
       <div class="col-md-6 col-sm-12 margin-bg">
         <h1>AUDITS rénovation</h1>
         <h2 class="h2">
@@ -45,8 +43,7 @@
                   :rules="Rules.name"
                   name="client_name"
                   filled
-                  clear-icon="mdi-close-circle"
-                  clearable
+
                   label="Votre nom"
                   solo
                 ></v-text-field>
@@ -58,12 +55,11 @@
                   :rules="Rules.tel"
                   regex="^(71|72|74|76|81|82|84|85|86|87|88|89)\\d{5}$"
                   filled
-                  clear-icon="mdi-close-circle"
-                  clearable
-                  label="Numéro de téléphone"
                   solo
+                  label="Numéro de téléphone"
+
                   type="number"
-                  hint="cliquez sur le button"
+
                 ></v-text-field>
               </div>
 
@@ -138,6 +134,7 @@
         </v-dialog>
       </v-col>
     </div>
+    <hr />
     <div>
       <Footer />
     </div>
@@ -204,7 +201,7 @@ export default {
       description:
         "AUDITS rénovation | Pour tous vos travaux de rénovation , isolation, travaux de couverture ou de façade, audits rénovation répond à vos besoins devis gratuit + diagnostics techniques ",
       url: "https://auditsrenovation.fr",
-      img: require("~/static/ravalement.jpg"),
+      img: require("~/static/isolation.jpg"),
     },
     client: {
       tel: "",
@@ -214,7 +211,7 @@ export default {
     Rules: {
       name: [(v) => !!v || "Champs requies"],
       tel: [
-        (v) => !!v || "Champs requies",
+        (v) => !!v || "Veuillez saisir un numéro valide",
         (v) =>
           (v && v.length >= 8) ||
           "Un numéro valid contient minumum 8 caractéres",
@@ -276,12 +273,13 @@ export default {
 .bg-img {
   color: rgb(252, 252, 252);
   font-size: 20px;
-  background-image: url(~/static/isolation.jpg);
+  background-image: url(~/static/background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  width:100%;
+  width: 100%;
   height: 900px;
+  padding: 0px 10px 0px 10px;
 }
 
 .v-dialog {
@@ -293,7 +291,7 @@ export default {
 }
 .block-value {
   position: absolute;
-  right:1px;
+  right: 1px;
   height: 900px;
   background: #0095f1;
   background: linear-gradient(
@@ -316,6 +314,9 @@ export default {
   }
   .demande-partenariat {
     position: static;
+  }
+  h1{
+    font-size: 2rem;
   }
   h2,
   .h2,

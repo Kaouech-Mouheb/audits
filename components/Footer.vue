@@ -95,7 +95,10 @@
       <v-row justify="center">
         <v-col cols="12" class="text-center">
           <v-icon>mdi-facebook</v-icon>
-          <a href="linkedin.com/in/mouheb-kaouech-b8559b1a1" target="_blanck">
+          <a href="https://www.facebook.com/AUDITSrenovation/" target="_blanck">
+            <v-icon>mdi-facebook</v-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/mouheb-kaouech-b8559b1a1/" target="_blanck">
             <v-icon> mdi-linkedin </v-icon>
           </a>
           <v-icon>mdi-youtube</v-icon>
@@ -103,10 +106,19 @@
       </v-row>
       <v-row justify="center">
         <v-col class="text-center" cols="12">
-         <span class="fo-span">
+          <span class="fo-span">
             {{ new Date().getFullYear() }} — <strong>AUDITS Rénovation</strong>
-          <NuxtLink to="/mentions-legales"> Mentions Légales </NuxtLink>
-         </span>
+            <NuxtLink to="/mentions-legales"> Mentions Légales </NuxtLink>
+          </span>
+          <div class="Keywords">
+            <h1>AUDITS rénovation</h1>
+            <span>Keyword:</span>
+            <h2 class="d-inline">Audtis rénovation</h2>
+            <h3 class="d-inline">audits rénovation</h3>
+            <h4 class="d-inline">audit rénovation travaux de rénovation</h4>
+            <h5 class="d-inline">auditsrénovation travaux de toiture</h5>
+            <h6 class="d-inline">auditrénovation isolation thermique</h6>
+          </div>
         </v-col>
       </v-row>
     </v-container>
@@ -139,13 +151,42 @@ export default {
   }),
 };
 </script>
-<style scoped>
-@media (max-width: 575.98px){
-  li{
+<style lang="scss" scoped>
+li {
+  font-size: 16px;
+}
+.fo-span {
+  font-size: 13px;
+}
+.Keywords {
+  font-size: 9px;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 9px;
+  }
+}
+@media (max-width: 575.98px) {
+  li {
     font-size: 10px;
   }
-  .fo-span{
+  .fo-span {
     font-size: 11px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .Keywords {
+    font-size: 6px;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 6px;
+    }
   }
 }
 </style>

@@ -94,7 +94,7 @@
       </v-row>
       <v-row justify="center">
         <v-col cols="12" class="text-center">
-          <v-icon>mdi-facebook</v-icon>
+         
           <a href="https://www.facebook.com/AUDITSrenovation/" target="_blanck">
             <v-icon>mdi-facebook</v-icon>
           </a>

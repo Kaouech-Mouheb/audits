@@ -3,13 +3,13 @@
     <v-row justify="center">
       <v-col cols="12" md="5">
         <span class="h4 mt-4 d-block p-2 text-center text-primary"
-          >A propos</span
+          >NOUS CONTACTER </span
         >
         <hr />
       </v-col>
     </v-row>
     <div class="d-flex justify-content-center row">
-      <div class="col-md-3 col-sm-12">
+      <div class="col-md-4 col-sm-12">
         <v-card height="220px">
           <div class="text-center">
             <img src="decennale.png" class="logo-decennal" alt="" />
@@ -21,7 +21,7 @@
           </v-card-text>
         </v-card>
       </div>
-      <div class="col-md-3 col-sm-12">
+      <div class="col-md-4 col-sm-12">
         <v-card height="220px">
           <v-card-title> Coordonnées de contact </v-card-title>
           <v-card-text>
@@ -31,8 +31,8 @@
                 Email:contact@auditsrenovation.fr</a
               >
               <br />
-              <a href="tel:+33618662919">
-                <v-icon>mdi-phone</v-icon> téléphone : 06 18 66 29 19
+              <a href="tel:+33954064773">
+                <v-icon>mdi-phone</v-icon> téléphone : 0954064773
               </a>
             </address>
 
@@ -41,12 +41,12 @@
         </v-card>
       </div>
 
-      <div class="col-md-3 col-sm-12 mt-2">
+      <div class="col-md-4 col-sm-12 mt-2">
         <v-card height="220px" color="blue darken-3" class="text-light">
           <v-row>
             <v-col>
               <h3 class="m-4">
-                Avis client
+                <small>TÉMOIGNAGES</small>
                 <span class="grey--text text--lighten-2 text-caption mr-2">
                   ({{ 5 }}/5) basé sur 9 avis
                 </span>
@@ -71,11 +71,18 @@
                 </template>
 
                 <v-card>
-                  <v-card-title
-                    class="text-h5 text-center text-primary lighten-2"
-                  >
-                    Toutes les avis
-                  </v-card-title>
+                  <div class="close-avis">
+                    <v-card-title
+                      class="text-h5 text-center text-primary lighten-2"
+                    >
+                      Toutes les avis
+                    </v-card-title>
+                    <span class="close">
+                      <v-btn icon @click="dialogAvis = false">
+                        <v-icon large> mdi-close-circle-outline </v-icon>
+                      </v-btn>
+                    </span>
+                  </div>
                   <v-divider></v-divider>
                   <v-container>
                     <v-row
@@ -117,6 +124,18 @@
                     lazy-validation
                     @submit.prevent="sendEmailAvis"
                   >
+                    <v-col cols="12" md="11" sm="11">
+                      <v-text-field
+                        v-model="rating.email"
+                        name="avis_email"
+                        label="Email"
+                        value="Votre adresse email"
+                        :rules="[
+                          (v) => !!v || 'E-mail est requies',
+                          (v) => /.+@.+\..+/.test(v) || 'Format non valide',
+                        ]"
+                      ></v-text-field>
+                    </v-col>
                     <v-col cols="12" md="11" sm="11">
                       <v-textarea
                         v-model="rating.commentaire"
@@ -191,6 +210,7 @@ export default {
     rating: {
       message: "",
       note: "",
+      email: "",
     },
     avis: [
       {
@@ -298,6 +318,14 @@ export default {
 };
 </script>
 <style scoped>
+.close-avis {
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 .logo-decennal {
   width: 130px;
 }

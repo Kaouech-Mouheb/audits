@@ -22,7 +22,7 @@
             </p>
           </section>
           <section>
-            <h1 class="h4">Rénovation thermique et pourquoi ?</h1>
+            <h1 class="h4">Rénovation énergétique et pourquoi ?</h1>
             <p>
               Avec l’aide de l’État MaPrimeRénov’, les propriétaires se penchent
               de plus en plus sur la question de leurs dépenses énergétiques
@@ -106,9 +106,9 @@ export default {
   },
   data: () => ({
     renovationSeo: {
-      title: "AUDITS rénovation - rénovation thermique de votre logement",
+      title: "Audits rénovation - rénovation énergétique de votre logement",
       description:
-        "AUDITS rénovation | besoin de réaliser des travaux de construction ou de rénovation ? AUDITS rénovation peut répondre à tous vos projets de rénovation, rénovation thermique et aménagement de comble",
+        "AUDITS rénovation | besoin de réaliser des travaux de construction ou de rénovation ? AUDITS rénovation peut répondre à tous vos projets de rénovation, rénovation thermique et aménagement de comble. Audits rénovation siége : Choisy Le Roi",
       url: "https://auditsrenovation.fr",
       img: require("~/static/appartement.jpg"),
     },

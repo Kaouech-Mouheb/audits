@@ -9,6 +9,25 @@
 
       <v-spacer />
       <div>
+          <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+
+               color="#0095f1"
+              dark
+              v-bind="attrs"
+              v-on="on"
+              href="#formDevis"
+
+              class="small-screen"
+              text
+            >
+              <v-icon medium> mdi-file-document-outline</v-icon>
+              Obtenir un devis
+            </v-btn>
+          </template>
+          <span>Obtenir un devis</span>
+        </v-tooltip>
         <v-tooltip bottom>
           <template v-slot:activator="{ on, attrs }">
             <v-btn
@@ -17,12 +36,13 @@
               dark
               v-bind="attrs"
               v-on="on"
-              href="tel:+33618662919"
-              x-large
+              href="tel:+33954064773"
+
               class="small-screen"
+              text
             >
               <v-icon medium> mdi-phone</v-icon>
-              06 18 66 29 19
+              Appeler Maintenant
             </v-btn>
           </template>
           <span>Lancer l'appel</span>
@@ -30,18 +50,20 @@
 
         <v-btn
 
-          href="tel:+33618662919"
+          href="tel:+33954064773"
           color="#0095f1"
           class="small-screen-active"
           dark
+          text
           small
         >
           <span class="mt-2">
             <v-icon small> mdi-phone </v-icon>
-            06 18 66 29 19
+            Appeler Maintenant
           </span>
         </v-btn>
       </div>
+
     </v-app-bar>
     <v-main>
       <div>
@@ -62,12 +84,15 @@ export default {
 };
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:ital,wght@0,300;1,400&display=swap');
+
 #app {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
 width: 100%;
+ font-family: 'Josefin Sans', sans-serif;
 }
 
 .theme--light.v-app-bar.v-toolbar.v-sheet {

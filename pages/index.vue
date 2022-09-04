@@ -4,21 +4,24 @@
     <div class="d-flex justify-content-center row">
       <div class="col-md-6 col-sm-12 margin-bg">
         <h1>AUDITS rénovation</h1>
+        <div>Société de construction</div>
         <h2 class="h2">
-          Vous avez un projet <strong>d'isolation themrique </strong> ou de
-          <strong>rénovation</strong> ?
+          Vous avez un projet
+          <strong>rénovation énergétique ou de construction</strong> ?
         </h2>
 
         <p class="mt-4 p2">
-          Pour tous vos <strong>travaux d’isolation thermique</strong>,
+          Pour tous vos <strong>de construction</strong>,
+          <strong>travaux d’isolation thermique</strong>,
           <strong
             ><span class="d-none">travaux</span> d’aménagement de
             combles</strong
           >,
           <strong> <span class="d-none">travaux</span> de couverture</strong>,
           <strong><span class="d-none">travaux</span> de façades </strong> et de
-          <strong>rénovation</strong>, <strong>AUDITS rénovation</strong> mais à
-          votre disposition une équipe dédiée.
+          <strong>rénovation énergétique</strong>,
+          <strong>AUDITS rénovation</strong> mais à votre disposition une équipe
+          dédiée.
         </p>
         <p class="p3">
           Vous pouvez nous contactez par téléphone ou bien remplir notre
@@ -43,7 +46,6 @@
                   :rules="Rules.name"
                   name="client_name"
                   filled
-
                   label="Votre nom"
                   solo
                 ></v-text-field>
@@ -57,9 +59,7 @@
                   filled
                   solo
                   label="Numéro de téléphone"
-
                   type="number"
-
                 ></v-text-field>
               </div>
 
@@ -90,12 +90,19 @@
       <BilanThermque />
     </div>
     <div>
-      <Expertise />
+      <Couverture />
+    </div>
+    <div>
+      <NosRealisations />
+    </div>
+    <div>
+      <Renovation />
     </div>
 
     <div>
       <Avis />
     </div>
+
     <div class="demande-partenariat">
       <v-col cols="auto">
         <v-dialog
@@ -153,9 +160,11 @@
 
 <script>
 import emailjs from "emailjs-com";
+import Renovation from "../components/Renovation.vue";
 export default {
   name: "IndexPage",
   head() {
+    Renovation;
     return {
       title: this.auditsSeo.title,
       meta: [
@@ -197,9 +206,9 @@ export default {
     validFormAppel: true,
     dialogPartenaire: false,
     auditsSeo: {
-      title: "AUDITS rénovation",
+      title: "Audits rénovation",
       description:
-        "AUDITS rénovation | Pour tous vos travaux de rénovation , isolation, travaux de couverture ou de façade, audits rénovation répond à vos besoins devis gratuit + diagnostics techniques ",
+        "Audits rénovation | Pour tous vos travaux de rénovation , isolation, travaux de couverture ou de façade, Audits rénovation répond à vos besoins devis gratuit + diagnostics techniques. Audits rénovation siége : Choisy Le roi ",
       url: "https://auditsrenovation.fr",
       img: require("~/static/isolation.jpg"),
     },
@@ -315,7 +324,7 @@ export default {
   .demande-partenariat {
     position: static;
   }
-  h1{
+  h1 {
     font-size: 2rem;
   }
   h2,

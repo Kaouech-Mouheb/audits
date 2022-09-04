@@ -134,9 +134,9 @@ export default {
   },
   data: () => ({
     isolation: {
-      title: "AUDITS rénovation | Travaux d'isolation thermique",
+      title: "Audits rénovation | Travaux d'isolation thermique",
       description:
-        "audits rénovation |Les travaux d'isolation bénéficient d'une TVA réduite. Le taux de 5,5 % s'applique directement sur votre facture. AUDITS rénovation effectue les démarches pour vous.",
+        "Audits rénovation |Les travaux d'isolation bénéficient d'une TVA réduite. Le taux de 5,5 % s'applique directement sur votre facture. AUDITS rénovation effectue les démarches pour vous. Audits rénovation siége : Choisy Le Roi",
       img: require("~/static/isolation.jpg"),
     },
   }),

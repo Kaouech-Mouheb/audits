@@ -2,9 +2,40 @@
   <v-footer class="bg-light">
     <v-container>
       <v-row>
-        <v-col cols="12" md="4">
+        <v-col cols="12" md="3">
+          <NuxtLink to="/ravalement-façade">
+            <h3 class="h5 m-4">
+              Rénovaiton façade
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-box-arrow-up-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                />
+              </svg>
+            </h3>
+          </NuxtLink>
+
+          <v-divider class="mx-4" color="white"></v-divider>
+          <ul v-for="i in itemsRavalement" :key="i">
+            <li class="list-unstyled">
+              {{ i }}
+            </li>
+          </ul>
+        </v-col>
+        <v-col cols="12" md="3">
           <NuxtLink to="/isolation-thermique">
-            <h3 class="h3 m-4">
+            <h3 class="h5 m-4">
               Isolation thermique
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,9 +64,9 @@
             </li>
           </ul>
         </v-col>
-        <v-col cols="12" md="4">
+        <v-col cols="12" md="3">
           <NuxtLink to="/toiture">
-            <h3 class="h3 m-4">
+            <h3 class="h5 m-4">
               Toiture
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,9 +92,9 @@
             <li class="list-unstyled">{{ i }}</li>
           </ul>
         </v-col>
-        <v-col cols="12" md="4">
+        <v-col cols="12" md="3">
           <NuxtLink to="/renovation">
-            <h3 class="h3 m-4">
+            <h3 class="h5 m-4">
               Rénovation
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +125,7 @@
       </v-row>
       <v-row justify="center">
         <v-col cols="12" class="text-center">
-         
+
           <a href="https://www.facebook.com/AUDITSrenovation/" target="_blanck">
             <v-icon>mdi-facebook</v-icon>
           </a>
@@ -112,7 +143,7 @@
           </span>
           <div class="Keywords">
             <h1>AUDITS rénovation</h1>
-            <span>Keyword:</span>
+            <span>Keywords:</span>
             <h2 class="d-inline">Audtis rénovation</h2>
             <h3 class="d-inline">audits rénovation</h3>
             <h4 class="d-inline">audit rénovation travaux de rénovation</h4>
@@ -147,6 +178,12 @@ export default {
       "— Menuiseries, fenêtres, portes",
       "— Carrelage, parquets, revêtements de sol",
       "— Ventilation, VMC",
+    ],
+     itemsRavalement: [
+      "— Rénovation de façade",
+      "— Nettoyage de façade",
+      "— Entretien de façade",
+
     ],
   }),
 };

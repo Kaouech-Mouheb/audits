@@ -115,6 +115,7 @@
 <script>
 import emailjs from "emailjs-com";
 export default {
+ 
   data: () => ({
     validFormDevis: true,
     devis: {
@@ -163,11 +164,12 @@ export default {
                   this.resetFormDevis(),
                   this.alertDevisSucces()
                 );
+                
               },
               (error) => {
                 console.log("FAILED...", error);
               }
-            );
+            )
         }
       }, 5);
     },

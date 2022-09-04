@@ -1,5 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
+
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -10,8 +12,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - AUDITS rénovation',
-    title: 'AUDITS rénovation',
+    titleTemplate: '%s - Audits rénovation',
+    title: 'Audits rénovation',
     htmlAttrs: {
       lang: 'fr'
     },
@@ -25,12 +27,46 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: ''
+        content: "AUDITS rénovation | Pour tous vos travaux de rénovation , isolation, travaux de couverture ou de façade, audits rénovation répond à vos besoins devis gratuit + diagnostics techniques ",
+
       },
       {
         name: 'format-detection',
         content: 'telephone=no'
-      }
+      },
+      {
+        hid: "og:title",
+        name: "og:title",
+        content: "AUDITS rénovation | Pour tous vos travaux de rénovation , isolation, travaux de couverture ou de façade, audits rénovation répond à vos besoins devis gratuit + diagnostics techniques ",
+
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content: "AUDITS rénovation | Pour tous vos travaux de rénovation , isolation, travaux de couverture ou de façade, audits rénovation répond à vos besoins devis gratuit + diagnostics techniques ",
+
+      },
+      {
+        hid: "og:url",
+        name: "og:url",
+        content: "https://auditsrenovation.fr"
+      },
+      {
+        hid: "og:image",
+        name: "og:image",
+        content:'/appartement.jpg'
+      },
+
+      {
+        hide: "twitter:card",
+        name: "twitter:card",
+        content: '/appartement.jpg' ? "summary_large_image" : "summary",
+      },
+      {
+        hide: "twitter:site",
+        name: "twitter:site",
+        content: "https://auditsrenovation.fr",
+      },
     ],
     link: [{
       rel: 'icon',
@@ -67,7 +103,9 @@ export default {
     '@nuxtjs/sitemap',
     'nuxt-robots',
     'nuxt-compress',
-    ['nuxt-canonical', { baseUrl: 'https://auditsrenovation.fr' }],
+    ['nuxt-canonical', {
+      baseUrl: 'https://auditsrenovation.fr'
+    }],
     'nuxt-ssr-cache',
 
   ],
@@ -125,7 +163,7 @@ export default {
       max: 100,
 
       // number of seconds to store this page in cache
-      ttl:1000 * 60 * 10,
+      ttl: 1000 * 60 * 10,
     },
   },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

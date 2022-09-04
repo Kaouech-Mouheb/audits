@@ -66,31 +66,7 @@
               peuvent venir en complément d’une des autres techniques.
             </p>
           </section>
-          <!---
-                <h2 class="h6">
-              Il existe deux types de <strong>charpentes</strong> :
-            </h2>
-            <p>
-              <strong>La charpente traditionnelle </strong>
-              : généralement construite en bois massif, elle est utilisée le
-              plus souvent dans les maisons anciennes ; elle est réalisée sur
-              mesure lors de la construction ; elle offre les avantages de
-              pouvoir accueillir des combles habitables, différentes formes de
-              toiture en pente, matériaux de couverture, et ouvertures
-            </p>
-            <p>
-              La
-              <strong>charpente à fermette</strong> : il s'agit d'une charpente
-              industrialisée, composée d'éléments préfabriqués en usine (les
-              fermettes), puis assemblés directement sur place ; toutes les
-              fermettes ne permettent pas de créer des combles habitables,
-              seules les fermettes à faux-entrait et les fermettes à entrait
-              retroussé offrent cette possibilité.
-            </p>
-            <div>
-              <img src="charpente.jpg" class="deperdition" alt="" />
-            </div>
-          -->
+
         </v-col>
         <v-col cols="12" md="4">
           <FormulaireDevis />
@@ -145,9 +121,9 @@ export default {
   data: () => ({
     toitureSeo: {
       title:
-        "Travaux de couverture - Travaux d'isolation thermique de couverture",
+        "Audits rénovation - Travaux de couverture",
       description:
-        "Nous intervenons sur tous types de couverture Contactez nous pour un devis sur mesure. Entretien, Rénovation et Réparation de toiture Travail de qualité devis Gratuit.",
+        "Audits rénovation intervient sur tous types de couverture Contactez nous pour un devis sur mesure. Entretien, Rénovation et Réparation de toiture Travail de qualité devis Gratuit. Audits rénovation siége : Choisy Le Roi",
       url: "https://auditsrenovation.fr",
       img: require("~/static/isolation-toiture.jpg"),
     },

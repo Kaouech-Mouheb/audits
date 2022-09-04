@@ -3,7 +3,7 @@
     <v-card width="100%" class="mt-4">
       <v-row justify="center">
         <v-col cols="12" md="5">
-          <div class="mt-1 h2 text-center text-primary">Nos réalisations</div>
+          <div class="mt-1 h2 text-center text-primary">Expertises</div>
           <hr />
         </v-col>
       </v-row>
@@ -32,8 +32,8 @@
 export default {
   data: () => ({
     slides: [
-    
-      
+
+
       {
         src: "appartement.jpg",
         title: "Rénovation d'un appartement",
@@ -64,11 +64,7 @@ export default {
         title: "Travaux de couverture",
         text: "Une toiture seine est étanche pour protéger votre habitat",
       },
-      {
-        src: "itecomble.jpg",
-        title: "Isolation thermique du comble",
-        text: "Isoler vos combles perdus vous permet de faire jusqu’à 30% d’économies d’énergie.",
-      },
+
     ],
   }),
 };

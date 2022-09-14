@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="12" md="3">
-          <NuxtLink to="/ravalement-façade">
+          <NuxtLink to="/ravalement">
             <h3 class="h5 m-4">
               Rénovation façade
               <svg

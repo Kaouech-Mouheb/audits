@@ -24,7 +24,7 @@
           <hr />
 
           <v-row justify="center">
-            <NuxtLink to="/ravalement-façade">
+            <NuxtLink to="/ravalement">
               <v-btn color="success" dark> En savoir plus </v-btn>
             </NuxtLink>
           </v-row>

@@ -3,7 +3,9 @@
     <v-container>
       <v-row>
         <v-col cols="12" md="12">
-          <h1 class="text-center text-primary">AUDITS rénovation isolation thermique</h1>
+          <h1 class="text-center text-primary">
+            AUDITS rénovation isolation thermique
+          </h1>
         </v-col>
       </v-row>
       <v-row justify="space-between">
@@ -117,12 +119,12 @@ export default {
           content: this.isolation.description,
         },
         { hid: "og:url", name: "og:url", content: this.isolation.url },
-        { hid: "og:image", name: "og:image", content: this.isolation.img },
+
 
         {
           hide: "twitter:card",
           name: "twitter:card",
-          content: this.isolation.img ? "summary_large_image" : "summary",
+
         },
         {
           hide: "twitter:site",
@@ -137,7 +139,8 @@ export default {
       title: "Audits rénovation | Travaux d'isolation thermique",
       description:
         "Audits rénovation |Les travaux d'isolation bénéficient d'une TVA réduite. Le taux de 5,5 % s'applique directement sur votre facture. AUDITS rénovation effectue les démarches pour vous. Audits rénovation siége : Choisy Le Roi",
-      img: require("~/static/isolation.jpg"),
+
+      url: "https://auditsrenovation.fr/isolation-thermique/",
     },
   }),
 };

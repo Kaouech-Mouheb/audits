@@ -89,7 +89,7 @@ export default {
           content: this.renovationSeo.description,
         },
         { hid: "og:url", name: "og:url", content: this.renovationSeo.url },
-        { hid: "og:image", name: "og:image", content: this.renovationSeo.img },
+
 
         {
           hide: "twitter:card",
@@ -110,7 +110,7 @@ export default {
       description:
         "AUDITS rénovation | besoin de réaliser des travaux de construction ou de rénovation ? AUDITS rénovation peut répondre à tous vos projets de rénovation, rénovation thermique et aménagement de comble. Audits rénovation siége : Choisy Le Roi",
       url: "https://auditsrenovation.fr",
-      img: require("~/static/appartement.jpg"),
+
     },
   }),
 };

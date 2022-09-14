@@ -5,7 +5,7 @@
         <v-col cols="12" md="3">
           <NuxtLink to="/ravalement-façade">
             <h3 class="h5 m-4">
-              Rénovaiton façade
+              Rénovation façade
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

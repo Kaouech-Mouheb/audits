@@ -2,19 +2,14 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="5">
-        <span class="h4 mt-4 d-block p-2 text-center text-primary"
-          ><strong> Travaux de couverture </strong>
-        </span>
+        <h1 class="h4 mt-4 d-block p-2 text-center text-primary"> Travaux de couverture </h1>
+
         <hr />
       </v-col>
     </v-row>
     <v-card class="mt-4 p-4">
       <v-row justify="center">
-        <v-col cols="12" md="6" sm="12">
-          <v-card class="img">
-            <v-img src="couverture.jpg"> </v-img>
-          </v-card>
-        </v-col>
+
         <v-col cols="12" md="6" sm="12">
           <div class="a-propos">
             <h1>Audits rénovation</h1>
@@ -53,13 +48,18 @@
                   </v-btn>
                 </div>
                 <FormulaireDevisToiture />
-                
+
                   <v-btn class="fermer-dialog" @click="dialog = false" color="error">
                     Fermer
                   </v-btn>
               </div>
             </v-dialog>
           </v-row>
+        </v-col>
+          <v-col cols="12" md="6" sm="12">
+          <v-card class="img">
+            <v-img src="couverture.jpg"> </v-img>
+          </v-card>
         </v-col>
       </v-row>
     </v-card>

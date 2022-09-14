@@ -60,7 +60,7 @@ export default {
         text: "Une bonne isolation thermique vous permet de réduire votre facture énergétique et de profiter d’une température intérieure constante et agréable",
       },
       {
-        src: "couverture.jpg",
+        src: "couverture.bmp",
         title: "Travaux de couverture",
         text: "Une toiture seine est étanche pour protéger votre habitat",
       },

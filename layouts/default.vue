@@ -3,7 +3,7 @@
     <v-app-bar fixed app>
       <v-toolbar-title>
         <NuxtLink to="/">
-          <v-img src="auditsrenovationlogo.png" class="logo" title="AUDITS rénovation"></v-img>
+          <v-img src="auditsrenovationlogo.png"  class="logo" title="AUDITS rénovation"></v-img>
         </NuxtLink>
       </v-toolbar-title>
 
@@ -106,7 +106,7 @@ width: 100%;
   display: none;
 }
 .logo {
-  width: 180px;
+  width: 149px;
 }
 .small-screen:hover {
   text-decoration: none;
@@ -122,12 +122,12 @@ width: 100%;
     text-decoration: none;
   }
   .logo {
-    width: 150px;
+    width: 135px;
   }
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
   .logo {
-    width: 170px;
+    width: 134px;
   }
 }
 </style>

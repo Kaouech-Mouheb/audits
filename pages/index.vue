@@ -4,22 +4,19 @@
     <div class="d-flex justify-content-center row">
       <div class="col-md-6 col-sm-12 margin-bg">
         <h1>AUDITS rénovation</h1>
-        <div>Société de construction</div>
-        <h2 class="h2">
-          Vous avez un projet
-          <strong>rénovation énergétique ou de construction</strong> ?
-        </h2>
+        <h2>Entreprise de rénovation</h2>
+        <h3 class="h2">
+          Vous avez un projet de
+          <strong>rénovation intérieur</strong> ou de
+          <strong>rénovation extérieur</strong> ?
+        </h3>
 
         <p class="mt-4 p2">
-          Pour tous vos <strong>de construction</strong>,
-          <strong>travaux d’isolation thermique</strong>,
-          <strong
-            ><span class="d-none">travaux</span> d’aménagement de
-            combles</strong
-          >,
-          <strong> <span class="d-none">travaux</span> de couverture</strong>,
-          <strong><span class="d-none">travaux</span> de façades </strong> et de
-          <strong>rénovation énergétique</strong>,
+          Pour tous vos <strong>rénovation intérieur</strong>,
+          <strong>rénovation extérieur</strong>,
+          <strong>rénovation et traitement de façade</strong>,
+          <strong>isolation thermique</strong>,
+
           <strong>AUDITS rénovation</strong> mais à votre disposition une équipe
           dédiée.
         </p>
@@ -83,20 +80,25 @@
         <FormulaireDevis />
       </v-col>
     </div>
+
     <div>
-      <Carroussel />
+      <Peinture />
     </div>
     <div>
-      <BilanThermque />
+      <Ravalement />
     </div>
+
     <div>
       <Couverture />
     </div>
     <div>
-      <NosRealisations />
+      <Carroussel />
     </div>
     <div>
       <Renovation />
+    </div>
+    <div>
+      <NosRealisations />
     </div>
 
     <div>

@@ -111,7 +111,7 @@ Les présentes conditions du site <strong>https://auditsrenovation.fr</strong> s
 
           <div class="col-md-4 col-sm-12">
               <span class="h4 text-primary">
-                CO-Fondateur :
+                Fondateur :
               </span>
               <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="mouheb-kaouech-b8559b1a1" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/mouheb-kaouech-b8559b1a1?trk=profile-badge">Mouheb kaouech</a></div>
           </div>
@@ -131,7 +131,7 @@ export default {
   head(){
     return {
       script:[
-        {src:"https://platform.linkedin.com/badges/js/profile.js"}
+        {src:"https://platform.linkedin.com/badges/js/profile.js", body: true}
 
       ]
     }

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ravalement-fa%C3%A7ade", {data:[{}],fetch:{},mutations:void 0});

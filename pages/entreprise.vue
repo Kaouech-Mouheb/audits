@@ -4,21 +4,18 @@
     <div class="d-flex justify-content-center row">
       <div class="col-md-6 col-sm-12 margin-bg">
         <h1>AUDITS rénovation</h1>
-        <h2>Entreprise de rénovation </h2>
+        <h2>Entreprise de rénovation</h2>
         <h3 class="h2">
           Vous avez un projet de
-          <strong>rénovation intérieur</strong> ou de <strong>rénovation extérieur</strong> ?
+          <strong>rénovation intérieur</strong> ou de
+          <strong>rénovation extérieur</strong> ?
         </h3>
 
         <p class="mt-4 p2">
           Pour tous vos <strong>rénovation intérieur</strong>,
           <strong>rénovation extérieur</strong>,
-          <strong
-            >rénovation et traitement de façade</strong
-          >,
-            <strong
-            >isolation thermique</strong
-          >,
+          <strong>rénovation et traitement de façade</strong>,
+          <strong>isolation thermique</strong>,
 
           <strong>AUDITS rénovation</strong> mais à votre disposition une équipe
           dédiée.
@@ -83,28 +80,19 @@
         <FormulaireDevis />
       </v-col>
     </div>
-      <div>
-      <Peinture />
-    </div>
-  <div>
-    <Ravalement />
-  </div>
-    <div>
-      <Couverture />
-    </div>
-    <div>
-      <Carroussel />
-    </div>
- <div>
-      <Renovation />
-    </div>
     <div>
       <NosRealisations />
     </div>
+    <div>
+      <Review />
+    </div>
+    <div>
+      <Promotions />
+    </div>
 
 
     <div>
-      <Avis />
+      <Apropos />
     </div>
 
     <div class="demande-partenariat">
@@ -164,7 +152,7 @@
 
 <script>
 import emailjs from "emailjs-com";
-import Renovation from "../components/Renovation.vue";
+import Renovation from "../components/apropos.vue";
 export default {
   name: "IndexPage",
   head() {

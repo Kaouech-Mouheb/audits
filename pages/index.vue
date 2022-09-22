@@ -80,29 +80,18 @@
         <FormulaireDevis />
       </v-col>
     </div>
-
-    <div>
-      <Peinture />
-    </div>
-    <div>
-      <Ravalement />
-    </div>
-
-    <div>
-      <Couverture />
-    </div>
-    <div>
-      <Carroussel />
-    </div>
-    <div>
-      <Renovation />
-    </div>
     <div>
       <NosRealisations />
     </div>
+    <div>
+      <Review />
+    </div>
+    <div>
+      <Promotions />
+    </div>
 
     <div>
-      <Avis />
+      <Apropos />
     </div>
 
     <div class="demande-partenariat">
@@ -162,10 +151,12 @@
 
 <script>
 import emailjs from "emailjs-com";
-import Renovation from "../components/Renovation.vue";
+import Renovation from "../components/apropos.vue";
+
 export default {
   name: "IndexPage",
-  head() {
+
+  Reviewhead() {
     Renovation;
     return {
       title: this.auditsSeo.title,
@@ -200,6 +191,13 @@ export default {
           hide: "twitter:site",
           name: "twitter:site",
           content: this.auditsSeo.url,
+        },
+      ],
+      script: [
+        {
+          type: "application/ld+json",
+          src: "principal.js",
+          head: true,
         },
       ],
     };

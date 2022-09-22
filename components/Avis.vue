@@ -48,7 +48,7 @@
               <h3 class="m-4">
                 <small>TÉMOIGNAGES</small>
                 <span class="grey--text text--lighten-2 text-caption mr-2">
-                  ({{ 5 }}/5) basé sur 9 avis
+                  ({{ 4.7 }}/5) basé sur 14 avis
                 </span>
               </h3>
               <div class="m-4">
@@ -267,6 +267,36 @@ export default {
         date: "Le 03/10/2021",
         client: "Sachat M.",
       },
+          {
+          img: require("~/static/avatar5.jpg"),
+          text: "Je ferai apel à eux pour mes futurs travaux",
+          date: "Le 07/9/2022",
+          client: "Fabienne ben.",
+        },
+          {
+          img: require("~/static/avatar5.jpg"),
+          text: "Bonne réactivité et accompagnement pour les travaux. Je recommande",
+          date: "Le 05/9/2022",
+          client: "Eric her.",
+        },
+          {
+          img: require("~/static/avatar5.jpg"),
+          text: "Entreprise sérieuse. Je recommande",
+          date: "Le 12/8/2022",
+          client: "Carole G.",
+        },
+             {
+          img: require("~/static/avatar5.jpg"),
+          text: "Bonne réactivité et accompagnement pour les travaux. Je recommande",
+          date: "Le 05/6/2022",
+          client: "Mostapha h.",
+        },
+          {
+          img: require("~/static/avatar5.jpg"),
+          text: ".Vraiment satisfait. Je recommande",
+          date: "Le 11/7/2022",
+          client: "Caroline E.",
+        },
     ],
     alertAvis: false,
     validFormAvis: true,

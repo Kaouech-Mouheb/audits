@@ -93,7 +93,7 @@
           </ul>
         </v-col>
         <v-col cols="12" md="3">
-          <NuxtLink to="/renovation">
+          <NuxtLink to="/renovation-dappartement">
             <h3 class="h5 m-4">
               Rénovation
               <svg

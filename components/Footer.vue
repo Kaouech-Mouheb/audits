@@ -34,9 +34,9 @@
           </ul>
         </v-col>
         <v-col cols="12" md="3">
-          <NuxtLink to="/isolation-thermique">
+          <NuxtLink to="/peinture">
             <h3 class="h5 m-4">
-              Isolation thermique
+              Travaux de peinture
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -93,7 +93,7 @@
           </ul>
         </v-col>
         <v-col cols="12" md="3">
-          <NuxtLink to="/renovation-dappartement">
+          <NuxtLink to="/renovationdappartement">
             <h3 class="h5 m-4">
               Rénovation
               <svg
@@ -159,12 +159,10 @@
 export default {
   data: () => ({
     itemsIsolation: [
-      "— Aménagement de combles",
-      "— Isolation comble perdu",
-      "— Isolation des combles aménagés par l’extérieur",
-      "— Isolation des combles aménagés par l’intérieur",
-      "— Isolation thermique par l’extérieur",
-      "— Isolation thermique par l’intérieur",
+      "— Peinture intérieur",
+      "— Peinture extérieur",
+      "— Mise en enduit",
+      "— Peinture par pulvérisation",
     ],
     itemsToiture: [
       "— Traitement de charpentes",

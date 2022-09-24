@@ -4,27 +4,61 @@
       <v-row>
         <v-col cols="12" md="8">
           <v-row>
-            <v-col cols="12" md="12">
-              <h1 class="h2 text-center text-primary">
-                Entreprise de peinture
-              </h1>
-              <v-img
-                src="/peintre.jpg"
-                title="ravalement de façade"
-                alt="ravalement de façade"
-                max-width="700px"
-              ></v-img>
+            <v-col
+              cols="12"
+              md="12"
+              itemscope
+              itemtype="https://schema.org/AggregateRating"
+            >
+              <div
+                itemprop="itemReviewed"
+                itemscope
+                itemtype="https://schema.org/LocalBusiness"
+              >
+                <h1 itemprop="name" class="h2 text-center text-primary">
+                  Peinture
+                </h1>
+                <v-img
+                  itemprop="image"
+                  src="peintre.jpg"
+                  title="Entreprise de peinture"
+                  alt="Entreprise de peinture"
+                  max-width="700px"
+                ></v-img>
+                <meta itemprop="ratingValue" content="4.7" />
+                <meta itemprop="bestRating" content="5" />
+                <span itemprop="reviewRating">
+                  <v-rating
+                    :value="4.7"
+                    color="amber"
+                    dense
+                    half-increments
+                    readonly
+                    size="14"
+                  ></v-rating>
+                  <span class="text-secondary">
+                    Basé sur <span itemprop="ratingCount">14</span> évaluations
+                    d'utilisateurs
+                  </span>
+                </span>
+              </div>
             </v-col>
-            <v-col cols="12" md="12">
-              Audits rénovation est une <strong>entreprise de peinture</strong> et met son
-              expérience au service des professionnels et des particuliers. Son
-              équipe est composée de professionnels expérimentés, ayant de
-              multiples compétences dans divers corps de métiers. Tous qualifiés
-              ouvriers ou artisans, ils mettent leurs compétences à votre
-              service pour un travail de qualité et une finition irréprochable.
-              Grâce à leurs compétences complémentaires, ils sont en mesure de
-              réaliser des chantiers très variés de travaux de peinture de
-              décoration et de rénovation.
+            <v-col
+              cols="12"
+              md="12"
+              itemtype="https://schema.org/LocalBusiness"
+              itemprop="description"
+            >
+              <span itemprop="name"> Audits rénovation</span> est une
+              <span itemprop="genre">entreprise de peinture</span>
+              et met son expérience au service des professionnels et des
+              particuliers. Son équipe est composée de professionnels
+              expérimentés, ayant de multiples compétences dans divers corps de
+              métiers. Tous qualifiés ouvriers ou artisans, ils mettent leurs
+              compétences à votre service pour un travail de qualité et une
+              finition irréprochable. Grâce à leurs compétences complémentaires,
+              ils sont en mesure de réaliser des chantiers très variés de
+              travaux de peinture de décoration et de rénovation.
             </v-col>
 
             <v-col cols="12" md="12">
@@ -66,12 +100,17 @@
               </ul>
             </v-col>
           </v-row>
-
         </v-col>
         <v-col cols="12" md="4">
           <FormulaireDevis />
         </v-col>
       </v-row>
+      <div>
+        <Promotions />
+      </div>
+      <div>
+        <NosRealisations />
+      </div>
     </v-container>
     <div>
       <Footer />

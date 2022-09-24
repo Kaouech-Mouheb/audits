@@ -1,86 +1,109 @@
 <template>
-  <div class="bg-img rating">
-    <div class="container-fluid block-value"></div>
-    <div class="d-flex justify-content-center row">
-      <div class="col-md-6 col-sm-12 margin-bg">
-        <h1>AUDITS rénovation</h1>
-        <h2>Entreprise de rénovation</h2>
-        <h3 class="h2">
-          Vous avez un projet de
-          <strong>rénovation intérieur</strong> ou de
-          <strong>rénovation extérieur</strong> ?
-        </h3>
-
-        <p class="mt-4 p2">
-          Pour tous vos <strong>rénovation intérieur</strong>,
-          <strong>rénovation extérieur</strong>,
-          <strong>rénovation et traitement de façade</strong>,
-          <strong>isolation thermique</strong>,
-
-          <strong>AUDITS rénovation</strong> mais à votre disposition une équipe
-          dédiée.
-        </p>
-        <p class="p3">
-          Vous pouvez nous contactez par téléphone ou bien remplir notre
-          formulaire en ligne.
-        </p>
-
-        <div>
-          <h2>
-            <v-icon color="white">mdi-phone-outgoing</v-icon>
-            NOUS VOUS RAPPELONS GRATUITEMENT
-          </h2>
-          <v-form
-            ref="formAppel"
-            v-model="validFormAppel"
-            lazy-validation
-            @submit.prevent="sendEmailTel"
-          >
-            <div class="row">
-              <div class="col-md-4 col-sm-7">
-                <v-text-field
-                  v-model="client.name"
-                  :rules="Rules.name"
-                  name="client_name"
-                  filled
-                  label="Votre nom"
-                  solo
-                ></v-text-field>
-              </div>
-              <div class="col-md-4 col-sm-7">
-                <v-text-field
-                  v-model="client.tel"
-                  name="tel"
-                  :rules="Rules.tel"
-                  regex="^(71|72|74|76|81|82|84|85|86|87|88|89)\\d{5}$"
-                  filled
-                  solo
-                  label="Numéro de téléphone"
-                  type="number"
-                ></v-text-field>
-              </div>
-
-              <v-col cols="12" class="mt-btn-rplmoi">
-                <v-btn
-                  color="success"
-                  :disabled="!validFormAppel"
-                  type="submit"
-                >
-                  Rappelez Moi
-                </v-btn>
-                <div>
-                  100% de clients satisfaits ! Devis Gratuit sans engagement.
-                </div>
-              </v-col>
-            </div>
-          </v-form>
+  <v-container fluid>
+    <v-row class="bg-img" justify="center">
+      <v-col
+        cols="12"
+        md="10"
+        sm="12"
+        itemscope
+        itemtype="https://schema.org/AggregateRating"
+      >
+        <div
+          itemprop="itemReviewed"
+          itemscope
+          itemtype="https://schema.org/LocalBusiness"
+        >
+          <meta itemprop="ratingValue" content="4.7" />
+          <meta itemprop="bestRating" content="5" />
+          <span itemprop="reviewRating">
+            <v-rating
+              :value="4.7"
+              color="amber"
+              dense
+              half-increments
+              readonly
+              size="14"
+            ></v-rating>
+            <span class="evaluation">
+              Basé sur <span itemprop="ratingCount">14</span> évaluations
+              d'utilisateurs
+            </span>
+          </span>
         </div>
-      </div>
-      <v-col cols="12" md="4" sm="12" class="mt-4">
+      </v-col>
+      <v-col cols="12" md="6" sm="12">
+        <div class="" itemscope itemtype="https://schema.org/LocalBusiness">
+          <h1 itemprop="name">AUDITS rénovation</h1>
+          <h2 itemprop="description">Entreprise de rénovation</h2>
+          <h3 class="h2">
+            Vous avez un projet de
+            <strong>rénovation intérieur</strong> ou de
+            <strong>rénovation extérieur</strong> ?
+          </h3>
+
+          <p class="p3">
+            Vous pouvez nous contactez par téléphone ou bien remplir notre
+            formulaire en ligne.
+          </p>
+
+          <div>
+            <h2>
+              <v-icon color="white">mdi-phone-outgoing</v-icon>
+              NOUS VOUS RAPPELONS GRATUITEMENT
+            </h2>
+            <v-form
+              ref="formAppel"
+              v-model="validFormAppel"
+              lazy-validation
+              @submit.prevent="sendEmailTel"
+            >
+              <div class="row">
+                <div class="col-md-4 col-sm-7">
+                  <v-text-field
+                    v-model="client.name"
+                    :rules="Rules.name"
+                    name="client_name"
+                    filled
+                    label="Votre nom"
+                    solo
+                  ></v-text-field>
+                </div>
+                <div class="col-md-4 col-sm-7">
+                  <v-text-field
+                    v-model="client.tel"
+                    name="tel"
+                    :rules="Rules.tel"
+                    regex="^(71|72|74|76|81|82|84|85|86|87|88|89)\\d{5}$"
+                    filled
+                    solo
+                    label="Numéro de téléphone"
+                    type="number"
+                  ></v-text-field>
+                </div>
+
+                <v-col cols="12" class="mt-btn-rplmoi">
+                  <v-btn
+                    color="success"
+                    :disabled="!validFormAppel"
+                    type="submit"
+                  >
+                    Rappelez Moi
+                  </v-btn>
+                  <div>
+                    100% de clients satisfaits ! Devis Gratuit sans engagement.
+                  </div>
+                </v-col>
+              </div>
+            </v-form>
+          </div>
+        </div>
+      </v-col>
+
+      <v-col cols="12" md="4" sm="12">
         <FormulaireDevis />
       </v-col>
-    </div>
-    <div>
+    </v-row>
+    <div class="mt-4">
       <NosRealisations />
     </div>
     <div>
@@ -146,7 +169,7 @@
         Un chargé d'affaire vous contactera dans les meilleurs délais
       </v-alert>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -191,13 +214,6 @@ export default {
           hide: "twitter:site",
           name: "twitter:site",
           content: this.auditsSeo.url,
-        },
-      ],
-      script: [
-        {
-          type: "application/ld+json",
-          src: "principal.js",
-          head: true,
         },
       ],
     };
@@ -282,13 +298,15 @@ export default {
 .bg-img {
   color: rgb(252, 252, 252);
   font-size: 20px;
-  background-image: url(~/static/background.jpg);
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(49, 135, 247, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url("~/static/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  height: 900px;
-  padding: 0px 10px 0px 10px;
 }
 
 .v-dialog {
@@ -318,6 +336,9 @@ export default {
 }
 
 @media (max-width: 575.98px) {
+  .evaluation {
+    font-size: 12px;
+  }
   .margin-bg[data-v-2a183b29] {
     margin-top: 40px;
   }

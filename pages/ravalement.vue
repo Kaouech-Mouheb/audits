@@ -1,30 +1,60 @@
 <template>
   <div>
-    <v-container>
-      <v-row>
+    <v-container itemscope itemtype="https://schema.org/LocalBusiness">
+      <h1 itemprop="name" class="h2 text-center text-primary">
+        Ravalement de façade
+      </h1>
+      <hr />
+      <v-row class="mt-4">
         <v-col cols="12" md="8">
-          <v-row>
-            <v-col cols="12" md="12">
-              <h1 class="h2 text-center text-primary">
-                Entreprise de ravalement de façade
-              </h1>
+          <v-row justify="center">
+            <div
+              itemprop="reviews"
+              itemscope
+              itemtype="https://schema.org/AggregateRating"
+            >
               <v-img
-                src="/ravalement.jpg"
-                title="ravalement de façade"
+                src="facade.jpg"
+                title="Ravalement de façade"
                 alt="ravalement de façade"
                 max-width="700px"
               ></v-img>
-            </v-col>
-            <v-col cols="12" md="12">
-              Le ravalement ou la rénovation de façade est une suite d'actions
-              qui vise à remettre en état les murs extérieurs de votre logement.
-              <br />
-              En effet, avec le temps, votre bâtiment est susceptible d'être
-              affecté par des mouvements de structure, avec pour conséquences
-              fissures et lézardements des murs, qui peuvent elles-même
-              déboucher sur une isolation dégradée ou sur des infiltrations
-              d'eau. C'est pourquoi des travaux de ravalement réguliers sont
-              indispensables pour pallier ces problématiques.
+              <meta itemprop="ratingValue" content="4.7" />
+              <meta itemprop="bestRating" content="5" />
+              <v-rating
+                :value="4.7"
+                color="amber"
+                dense
+                half-increments
+                readonly
+                size="14"
+              ></v-rating>
+              <span class="text-secondary">
+                Basé sur <span itemprop="ratingCount">14</span> évaluations
+                d'utilisateurs
+              </span>
+            </div>
+            <hr />
+            <v-col
+              cols="12"
+              md="12"
+              itemscope
+              itemtype="https://schema.org/LocalBusiness"
+            >
+              <span itemprop="name"
+                >Le ravalement ou la rénovation de façade</span
+              >
+              <span itemprop="description">
+                est une suite d'actions qui vise à remettre en état les murs
+                extérieurs de votre logement.
+                <br />
+                En effet, avec le temps, votre bâtiment est susceptible d'être
+                affecté par des mouvements de structure, avec pour conséquences
+                fissures et lézardements des murs, qui peuvent elles-même
+                déboucher sur une isolation dégradée ou sur des infiltrations
+                d'eau. C'est pourquoi des travaux de ravalement réguliers sont
+                indispensables pour pallier ces problématiques.
+              </span>
             </v-col>
             <v-col cols="12" md="12">
               <h2 class="h4">Les avantages d'un ravalement de façade</h2>
@@ -96,6 +126,9 @@
           <FormulaireDevis />
         </v-col>
       </v-row>
+      <v-row>
+        <Facade />
+      </v-row>
     </v-container>
     <div>
       <Footer />
@@ -128,11 +161,9 @@ export default {
         },
         { hid: "og:url", name: "og:url", content: this.isolation.url },
 
-
         {
           hide: "twitter:card",
           name: "twitter:card",
-
         },
         {
           hide: "twitter:site",
@@ -148,7 +179,7 @@ export default {
       description:
         "Entreprise de ravalement de façade | Un projet de rénovation de façade, ravelement de façade ou nettoyage de façade, Audits rénovation mets à votre disposition une équipe dédiée",
 
-      url:"https://auditsrenovation.fr/ravalement-façade/"
+      url: "https://auditsrenovation.fr/ravalement-façade/",
     },
   }),
 };

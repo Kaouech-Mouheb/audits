@@ -119,9 +119,10 @@ export default {
     ],
     routes: [
       '/',
-      '/isolation-thermique',
-      '/toiture',
-      '/renovation'
+      '/renovationdappartement',
+      '/peinture',
+      '/ravalement',
+      '/toiture'
     ],
     defaults: {
       changefreq: 'daily',

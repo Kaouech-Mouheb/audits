@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/renovation-dappartement", {data:[{}],fetch:{},mutations:void 0});

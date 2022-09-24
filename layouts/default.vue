@@ -84,7 +84,7 @@ export default {
 };
 </script>
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:ital,wght@0,300;1,400&display=swap');
+
 
 #app {
   user-select: none;
@@ -92,7 +92,7 @@ export default {
   -webkit-user-select: none;
   -ms-user-select: none;
 width: 100%;
- font-family: 'Josefin Sans', sans-serif;
+ font-family: 'Georgia', sans-serif;
 }
 
 .theme--light.v-app-bar.v-toolbar.v-sheet {

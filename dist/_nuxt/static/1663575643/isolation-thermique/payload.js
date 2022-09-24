@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/isolation-thermique", {data:[{}],fetch:{},mutations:void 0});

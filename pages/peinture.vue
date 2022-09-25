@@ -12,7 +12,7 @@
             <div
               itemprop="itemReviewed"
               itemscope
-              itemtype="https://schema.org/LocalBusiness"
+              itemtype="https://schema.org/Rating"
             >
               <h1 itemprop="name" class="h2 text-center text-primary">
                 Peinture

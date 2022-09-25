@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <div class="container-fluid">
     <v-row class="bg-img" justify="center">
       <v-col
         cols="12"
@@ -11,7 +11,7 @@
         <div
           itemprop="itemReviewed"
           itemscope
-          itemtype="https://schema.org/LocalBusiness"
+          itemtype="https://schema.org/Rating"
         >
           <meta itemprop="ratingValue" content="4.7" />
           <meta itemprop="bestRating" content="5" />
@@ -103,18 +103,20 @@
         <FormulaireDevis />
       </v-col>
     </v-row>
-    <div class="mt-4">
-      <NosRealisations />
-    </div>
-    <div>
-      <Review />
-    </div>
-    <div>
-      <Promotions />
-    </div>
+    <div class="nos-realisation-margin-sm">
+      <div>
+        <NosRealisations />
+      </div>
+      <div>
+        <Review />
+      </div>
+      <div>
+        <Promotions />
+      </div>
 
-    <div>
-      <Apropos />
+      <div>
+        <Apropos />
+      </div>
     </div>
 
     <div class="demande-partenariat">
@@ -169,7 +171,7 @@
         Un chargé d'affaire vous contactera dans les meilleurs délais
       </v-alert>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -336,6 +338,9 @@ export default {
 }
 
 @media (max-width: 575.98px) {
+  .nos-realisation-margin-sm {
+    margin-top: 100px;
+  }
   .evaluation {
     font-size: 12px;
   }
@@ -346,12 +351,12 @@ export default {
     position: static;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   h2,
   .h2,
   .bg-img[data-v-2a183b29] {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     font-weight: 400;
   }

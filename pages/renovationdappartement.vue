@@ -13,7 +13,7 @@
               <div
                 itemprop="itemReviewed"
                 itemscope
-                itemtype="https://schema.org/LocalBusiness"
+                itemtype="https://schema.org/Rating"
               >
                 <h1 itemprop="name" class="h4 text-primary text-center">
                   Rénovation appartement

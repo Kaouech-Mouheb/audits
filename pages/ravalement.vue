@@ -7,13 +7,14 @@
       <hr />
       <v-row class="mt-4">
         <v-col cols="12" md="8">
-          <v-row justify="center">
+          <v-row justify="center" itemtype="https://schema.org/AggregateRating">
             <div
               itemprop="reviews"
               itemscope
-              itemtype="https://schema.org/AggregateRating"
+              itemtype="https://schema.org/Rating"
             >
               <v-img
+                itemprop="image"
                 src="facade.jpg"
                 title="Ravalement de façade"
                 alt="ravalement de façade"

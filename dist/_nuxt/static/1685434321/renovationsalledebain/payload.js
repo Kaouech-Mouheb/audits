@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/renovationsalledebain", {data:[{}],fetch:{},mutations:void 0});

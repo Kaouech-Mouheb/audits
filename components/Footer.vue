@@ -2,6 +2,59 @@
   <v-footer class="bg-light">
     <v-container>
       <v-row>
+            <v-col cols="12" md="3">
+          <NuxtLink to="/renovationdappartement">
+            <h3 class="h5 m-4">
+              Rénovation
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-box-arrow-up-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                />
+              </svg>
+            </h3>
+          </NuxtLink>
+          <v-divider class="mx-4" color="white"></v-divider>
+          <ul v-for="i in itemsRenovation" :key="i.name">
+            <span v-if="i.path">
+              <NuxtLink :to="i.path">
+                <li class="list-unstyled">{{ i.name }}
+                     <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-box-arrow-up-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                />
+              </svg>
+                </li>
+              </NuxtLink>
+            </span>
+            <span v-else>
+              <li class="list-unstyled">{{ i.name }}</li>
+            </span>
+          </ul>
+        </v-col>
         <v-col cols="12" md="3">
           <NuxtLink to="/ravalement">
             <h3 class="h5 m-4">
@@ -92,44 +145,16 @@
             <li class="list-unstyled">{{ i }}</li>
           </ul>
         </v-col>
-        <v-col cols="12" md="3">
-          <NuxtLink to="/renovationdappartement">
-            <h3 class="h5 m-4">
-              Rénovation
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-box-arrow-up-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
-                />
-                <path
-                  fill-rule="evenodd"
-                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
-                />
-              </svg>
-            </h3>
-          </NuxtLink>
-          <v-divider class="mx-4" color="white"></v-divider>
-          <ul v-for="i in itemsRenovation" :key="i">
-            <li class="list-unstyled">{{ i }}</li>
-          </ul>
-        </v-col>
+
 
         <v-divider class="mx-4" color="white"></v-divider>
       </v-row>
       <v-row justify="center">
         <v-col cols="12" class="text-center">
-
-          <a href="https://www.facebook.com/AUDITSrenovation/" target="_blanck">
-            <v-icon>mdi-facebook</v-icon>
-          </a>
-          <a href="https://www.linkedin.com/in/mouheb-kaouech-b8559b1a1/" target="_blanck">
+          <a
+            href="https://www.linkedin.com/in/mouheb-kaouech-b8559b1a1/"
+            target="_blanck"
+          >
             <v-icon> mdi-linkedin </v-icon>
           </a>
           <v-icon>mdi-youtube</v-icon>
@@ -163,7 +188,9 @@ export default {
       "— Peinture extérieur",
       "— Mise en enduit",
       "— Peinture par pulvérisation",
+      "— Peinture Décorative",
     ],
+
     itemsToiture: [
       "— Traitement de charpentes",
       "— Remaniement et rénovation de toiture",
@@ -172,16 +199,37 @@ export default {
       "— Velux",
     ],
     itemsRenovation: [
-      "— Travaux de peinture",
-      "— Menuiseries, fenêtres, portes",
-      "— Carrelage, parquets, revêtements de sol",
-      "— Ventilation, VMC",
+      {
+        name: "— Rénovation salle de bain",
+        path: "/renovationsalledebain",
+      },
+
+      {
+        name: "— Rénovation cuisine",
+        path: "/renovationcuisine",
+      },
+      {
+        name: "— Travaux de placo",
+        path: "",
+      },
+      {
+        name: "— Menuiseries, fenêtres, portes",
+        path: "",
+      },
+
+      {
+        name: "— Carrelage, parquets, revêtements de sol",
+        path: "",
+      },
+      {
+        name: "— Ventilation, VMC",
+        path: "",
+      },
     ],
-     itemsRavalement: [
+    itemsRavalement: [
       "— Rénovation de façade",
       "— Nettoyage de façade",
       "— Entretien de façade",
-
     ],
   }),
 };

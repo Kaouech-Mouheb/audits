@@ -1,5 +1,5 @@
 <template>
-<div>
+<section>
     <v-card class="card-bilan">
     <v-row justify="center">
       <v-col cols="12" md="5">
@@ -32,7 +32,7 @@
       </v-img>
     </v-card-text>
   </v-card>
-</div>
+</section>
 </template>
 
 <style scoped>

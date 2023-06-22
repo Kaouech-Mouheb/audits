@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <h1 class="h4 text-primary text-center">Nos dernières réalisations</h1>
     <v-row>
       <v-col cols="12" md="3">
@@ -109,7 +109,7 @@
             ></v-progress-linear>
           </template>
 
-          <v-img height="250" src="ravalement91.jpg"></v-img>
+          <v-img height="250" src="ravalement91.jpg" title="ravalement de façade" alt="ravalement de façade"></v-img>
 
           <v-card-title
             >Réalisation d'un encadrement fenêtre Athis Mons</v-card-title
@@ -154,7 +154,7 @@
             ></v-progress-linear>
           </template>
 
-          <v-img height="250" src="ravalement-peinture95.jpg"></v-img>
+          <v-img height="250" src="ravalement-peinture95.jpg" title="ravalement peinture" alt="ravalement peinture"></v-img>
 
           <v-card-title
             >Peinture extérieurs murs et volets à sarcelles 42 m2
@@ -190,7 +190,7 @@
         </v-card>
       </v-col>
     </v-row>
-  </div>
+  </section>
 </template>
 <style scoped>
 

@@ -1,7 +1,8 @@
 <template>
-  <v-row>
+  <section>
+    <v-row>
     <v-col cols="12" md="12">
-      <h2>Les avis de nos clients</h2>
+      <h1 class="h2">Les avis de nos clients</h1>
     </v-col>
     <v-col cols="12" md="2" sm="12">
       <img src="avisverifer.png" class="avis" />
@@ -33,6 +34,14 @@
                   <p>{{ item.text }}</p>
                   <p>{{ item.client }}</p>
                   <p>{{ item.date }}</p>
+                  <v-rating
+                    :value="4.7"
+                    color="amber"
+                    dense
+                    half-increments
+                    readonly
+                    size="14"
+                  ></v-rating>
                 </div>
               </div>
             </div>
@@ -46,6 +55,7 @@
       </div>
     </v-col>
   </v-row>
+  </section>
 </template>
 <script>
 export default {
@@ -355,8 +365,5 @@ h2 {
     font-size: 15px;
     letter-spacing: 4px;
   }
-
-
-
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <v-row justify="center">
       <v-col cols="12" md="5">
         <h1 class="h4 mt-4 d-block p-2 text-center text-primary">
@@ -13,7 +13,7 @@
       <v-row justify="center">
            <v-col cols="12" md="6" sm="12">
           <v-card class="img">
-            <v-img src="ravalement.jpg"> </v-img>
+            <v-img src="ravalement.jpg" alt="ravalement de façade" title="ravalement de façade"> </v-img>
           </v-card>
         </v-col>
         <v-col cols="12" md="6" sm="12">
@@ -32,7 +32,7 @@
 
       </v-row>
     </v-card>
-  </div>
+  </section>
 </template>
 <script>
 export default {

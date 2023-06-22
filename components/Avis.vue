@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <v-row justify="center">
       <v-col cols="12" md="5">
         <span class="h4 mt-4 d-block p-2 text-center text-primary"
@@ -201,7 +201,7 @@
         </v-alert>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import emailjs from "emailjs-com";

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <div>
       <v-card id="formDevis">
         <v-card-title class="text-primary"> Devis Gratuit </v-card-title>
@@ -9,9 +9,7 @@
               Remplissez ce formulaire pour recevoir votre devis gratuit et sans
               engagement sous 24h ouvrés.
             </v-col>
-            <v-col cols="12" md="4">
-              <img src="rge.jpeg" width="70px" />
-            </v-col>
+
           </v-row>
         </v-card-text>
 
@@ -110,12 +108,12 @@
         Un chargé d'affaire vous contactera dans les meilleurs délais
       </v-alert>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import emailjs from "emailjs-com";
 export default {
- 
+
   data: () => ({
     validFormDevis: true,
     devis: {
@@ -164,7 +162,7 @@ export default {
                   this.resetFormDevis(),
                   this.alertDevisSucces()
                 );
-                
+
               },
               (error) => {
                 console.log("FAILED...", error);

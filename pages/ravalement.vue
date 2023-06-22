@@ -1,17 +1,15 @@
 <template>
   <div>
-    <v-container itemscope itemtype="https://schema.org/LocalBusiness">
-      <h1 itemprop="name" class="h2 text-center text-primary">
-        Ravalement de façade
+    <v-container>
+      <h1 class="h2 text-center text-primary">
+        AUDITS rénovation Ravalement de façade
       </h1>
       <hr />
       <v-row class="mt-4">
         <v-col cols="12" md="8">
-          <v-row justify="center" itemtype="https://schema.org/AggregateRating">
+          <v-row justify="center">
             <div
-              itemprop="reviews"
-              itemscope
-              itemtype="https://schema.org/Rating"
+
             >
               <v-img
                 itemprop="image"
@@ -20,8 +18,7 @@
                 alt="ravalement de façade"
                 max-width="700px"
               ></v-img>
-              <meta itemprop="ratingValue" content="4.7" />
-              <meta itemprop="bestRating" content="5" />
+
               <v-rating
                 :value="4.7"
                 color="amber"
@@ -31,7 +28,7 @@
                 size="14"
               ></v-rating>
               <span class="text-secondary">
-                Basé sur <span itemprop="ratingCount">14</span> évaluations
+                Basé sur <span>14</span> évaluations
                 d'utilisateurs
               </span>
             </div>
@@ -39,13 +36,12 @@
             <v-col
               cols="12"
               md="12"
-              itemscope
-              itemtype="https://schema.org/LocalBusiness"
+
             >
-              <span itemprop="name"
+              <span
                 >Le ravalement ou la rénovation de façade</span
               >
-              <span itemprop="description">
+              <span>
                 est une suite d'actions qui vise à remettre en état les murs
                 extérieurs de votre logement.
                 <br />

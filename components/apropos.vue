@@ -1,10 +1,11 @@
 <template>
-  <div>
+  <section>
+    <div>
     <v-card class="mt-4 p-4">
       <v-row justify="center">
         <v-col cols="12" md="6" sm="12">
           <div class="a-propos">
-            <h1>À propos de nous</h1>
+            <h1>À propos de la société Audits rénovation</h1>
             AUDITS rénovation est une société de rénovation tous corps d'État.
             Nous mettons notre savoir-faire et notre compétence au service de
             tous projets de rénovation intérieure, rénovation extérieure
@@ -38,6 +39,7 @@
       </v-row>
     </v-card>
   </div>
+  </section>
 </template>
 <style scoped>
 .img {

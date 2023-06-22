@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <section>
     <h1 class="h4 text-primary text-center">Nos dernières réalisations</h1>
     <v-row>
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" sm="6" xs="12">
         <v-card class="mx-auto my-12" max-width="374">
           <template slot="progress">
             <v-progress-linear
@@ -35,7 +35,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon> 11 500 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon> 22 500 Euros TTC
             </div>
 
             <div><v-icon>mdi-calendar-clock-outline</v-icon> 1 mois</div>
@@ -50,7 +50,7 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" sm="6" xs="12">
         <v-card class="mx-auto my-12" max-width="374">
           <template slot="progress">
             <v-progress-linear
@@ -78,7 +78,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon>3 150 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon>4 150 Euros TTC
             </div>
 
             <div><v-icon>mdi-calendar-clock-outline</v-icon> 1 semaine</div>
@@ -93,7 +93,7 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" sm="6" xs="12">
         <v-card class="mx-auto my-12" max-width="374">
           <template slot="progress">
             <v-progress-linear
@@ -103,7 +103,7 @@
             ></v-progress-linear>
           </template>
 
-          <v-img height="250" src="salledebain11.jpg"></v-img>
+          <v-img height="250" src="salledebain11.jpg" alt="rénovation salle de bain" title=" rénovation salle de bain"></v-img>
 
           <v-card-title>Rénovation salle de bain paris 11 éme 4.5m2</v-card-title>
 
@@ -121,7 +121,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon>4 900 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon>8 900 Euros TTC
             </div>
 
             <div><v-icon>mdi-calendar-clock-outline</v-icon> 2 semaines</div>
@@ -137,7 +137,7 @@
         </v-card>
       </v-col>
 
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" sm="6" xs="12">
         <v-card class="mx-auto my-12" max-width="374">
           <template slot="progress">
             <v-progress-linear
@@ -170,7 +170,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon> 1 450 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon> 1 650 Euros TTC
             </div>
 
             <div><v-icon>mdi-calendar-clock-outline</v-icon> 2 jours</div>
@@ -187,7 +187,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" sm="6" xs="12">
         <v-card class="mx-auto my-12" max-width="374">
           <template slot="progress">
             <v-progress-linear
@@ -220,7 +220,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon> 10 500 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon> 13 500 Euros TTC
             </div>
 
             <div><v-icon>mdi-calendar-clock-outline</v-icon> 2 semaines</div>
@@ -235,7 +235,7 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" sm="6" xs="12">
         <v-card class="mx-auto my-12" max-width="374">
           <template slot="progress">
             <v-progress-linear
@@ -268,7 +268,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon> 13 700 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon> 17 700 Euros TTC
             </div>
 
             <div><v-icon>mdi-calendar-clock-outline</v-icon> 2 semaines</div>
@@ -284,7 +284,7 @@
         </v-card>
       </v-col>
 
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" sm="6" xs="12">
         <v-card class="mx-auto my-12" max-width="374">
           <template slot="progress">
             <v-progress-linear
@@ -294,7 +294,7 @@
             ></v-progress-linear>
           </template>
 
-          <v-img height="250" src="ravalement91.jpg"></v-img>
+          <v-img height="250" src="ravalement91.jpg" title="ravalement de façade" alt="ravalement de façade"></v-img>
 
           <v-card-title
             >Réalisation d'un encadrement fenêtre Athis Mons</v-card-title
@@ -314,7 +314,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon>1 800 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon>2200 Euros TTC
             </div>
 
             <div><v-icon>mdi-calendar-clock-outline</v-icon> 2 jours</div>
@@ -329,7 +329,7 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" sm="6" xs="12">
         <v-card class="mx-auto my-12" max-width="374">
           <template slot="progress">
             <v-progress-linear
@@ -339,7 +339,7 @@
             ></v-progress-linear>
           </template>
 
-          <v-img height="250" src="ravalement-peinture95.jpg"></v-img>
+          <v-img height="250" src="ravalement-peinture95.jpg" alt="ravalement de façade" title="ravalement de façade"></v-img>
 
           <v-card-title
             >Peinture extérieurs murs et volets à sarcelles 42 m2
@@ -359,7 +359,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon>2 190 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon>3190 Euros TTC
             </div>
 
             <div><v-icon>mdi-calendar-clock-outline</v-icon>2 jours</div>
@@ -376,7 +376,7 @@
       </v-col>
     </v-row>
 
-  </div>
+  </section>
 </template>
 
 <script>

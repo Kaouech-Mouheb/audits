@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <v-row justify="center">
       <v-col cols="12" md="5">
         <h1 class="h4 mt-4 d-block p-2 text-center text-primary"> Travaux de couverture </h1>
@@ -58,12 +58,12 @@
         </v-col>
           <v-col cols="12" md="6" sm="12">
           <v-card class="img">
-            <v-img src="couverture.jpg"> </v-img>
+            <v-img src="couverture.jpg" alt="rénovation de toiture" title="rénovation de toiture"> </v-img>
           </v-card>
         </v-col>
       </v-row>
     </v-card>
-  </div>
+  </section>
 </template>
 <script>
 export default {

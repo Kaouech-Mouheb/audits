@@ -4,20 +4,9 @@
       <v-row>
         <v-col cols="12" md="8">
           <v-row>
-            <v-col
-              cols="12"
-              md="12"
-              itemscope
-              itemtype="https://schema.org/AggregateRating"
-            >
-              <div
-                itemprop="itemReviewed"
-                itemscope
-                itemtype="https://schema.org/Rating"
-              >
-                <h1 itemprop="name" class="h4 text-primary text-center">
-                  Rénovation appartement
-                </h1>
+            <v-col cols="12" md="12">
+              <div>
+                <h1>Rénovation appartement</h1>
                 <v-img
                   itemprop="image"
                   src="appartement92.jpg"
@@ -25,8 +14,7 @@
                   alt="rénovation appartement"
                   max-width="700px"
                 ></v-img>
-                <meta itemprop="ratingValue" content="4.7" />
-                <meta itemprop="bestRating" content="5" />
+
                 <v-rating
                   :value="4.7"
                   color="amber"
@@ -36,26 +24,19 @@
                   size="14"
                 ></v-rating>
                 <span class="text-secondary">
-                  Basé sur <span itemprop="ratingCount">14</span> évaluations
-                  d'utilisateurs
+                  Basé sur <span>14</span> évaluations d'utilisateurs
                 </span>
               </div>
               <hr />
 
               <h2 class="h5">Rénovation appartement à paris</h2>
             </v-col>
-            <v-col
-              cols="12"
-              md="12"
-              itemscope
-              itemtype="https://schema.org/Person"
-              itemprop="description"
-            >
+            <v-col cols="12" md="12">
               Vous venez d'acheter un appartement et vous souhaitez le
               <strong>rénover</strong> ?
               <br />
               <span itemprop="name">Audits rénovation est une</span>
-              <span itemprop="genre">entreprise de rénovation</span>
+              <span itemprop="description">entreprise de rénovation</span>
               qui vous accompagnent de votre projet de
               <strong>rénovation</strong> et nous mettons à votre disposition
               notre savoir-faire et nous Équipes expérimentées. <br />
@@ -148,9 +129,10 @@ export default {
   },
   data: () => ({
     isolation: {
-      title: "Rénovation appartement | rénovation appartement prix m2",
+      title:
+        " AUDITS rénovation, Rénovation appartement | rénovation appartement prix m2",
       description:
-        "Vous avez un projet de rénovation appartement ou rénovation maison, une simple rénovation salle de bain ou la rénovation de votre cuisine. Audits rénovation vous accompagne dans vos projets de rénovation. ",
+        "Vous avez un projet de rénovation d'un appartement ou de rénovation d'une maison, une simple rénovation salle de bain ou la rénovation de votre cuisine. Audits rénovation vous accompagne dans vos projets de rénovation. Vous voulez savoir le prix de la rénovation au m2",
 
       url: "https://auditsrenovation.fr/renovation-dappartement/",
     },

@@ -2,7 +2,7 @@
   <v-footer class="bg-light">
     <v-container>
       <v-row>
-            <v-col cols="12" md="3">
+        <v-col cols="12" md="3">
           <NuxtLink to="/renovationdappartement">
             <h3 class="h5 m-4">
               Rénovation
@@ -29,24 +29,25 @@
           <ul v-for="i in itemsRenovation" :key="i.name">
             <span v-if="i.path">
               <NuxtLink :to="i.path">
-                <li class="list-unstyled">{{ i.name }}
-                     <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-box-arrow-up-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
-                />
-                <path
-                  fill-rule="evenodd"
-                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
-                />
-              </svg>
+                <li class="list-unstyled">
+                  {{ i.name }}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-box-arrow-up-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                    />
+                  </svg>
                 </li>
               </NuxtLink>
             </span>
@@ -81,9 +82,13 @@
 
           <v-divider class="mx-4" color="white"></v-divider>
           <ul v-for="i in itemsRavalement" :key="i">
-            <li class="list-unstyled">
-              {{ i }}
-            </li>
+            <nuxtLink v-if="i.path" :to="i.path">
+              {{ i.name }}
+            </nuxtLink>
+            <span v-else>
+              {{ i.name }}
+
+            </span>
           </ul>
         </v-col>
         <v-col cols="12" md="3">
@@ -145,7 +150,6 @@
             <li class="list-unstyled">{{ i }}</li>
           </ul>
         </v-col>
-
 
         <v-divider class="mx-4" color="white"></v-divider>
       </v-row>
@@ -227,9 +231,18 @@ export default {
       },
     ],
     itemsRavalement: [
-      "— Rénovation de façade",
-      "— Nettoyage de façade",
-      "— Entretien de façade",
+      {
+        name: "— Rénovation de façade",
+        path: "/renovation-façade",
+      },
+      {
+        name: "— Nettoyage de façade",
+        path: "",
+      },
+      {
+        name: "— Entretien de façade",
+        path: "",
+      },
     ],
   }),
 };

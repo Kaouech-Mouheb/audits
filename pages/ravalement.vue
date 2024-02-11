@@ -176,7 +176,7 @@ export default {
       description:
         "Entreprise de ravalement de façade | Un projet de rénovation de façade, ravelement de façade ou nettoyage de façade, Audits rénovation mets à votre disposition une équipe dédiée",
 
-      url: "https://auditsrenovation.fr/ravalement-façade/",
+      url: "https://auditsrenovation.fr/ravalement/",
     },
   }),
 };

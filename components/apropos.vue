@@ -24,8 +24,8 @@
                     Email:contact@auditsrenovation.fr</a
                   >
                   <br />
-                  <a href="tel:+33954064773">
-                    <v-icon>mdi-phone</v-icon> téléphone : 0954064773
+                  <a href="tel:+33618662919">
+                    <v-icon>mdi-phone</v-icon> téléphone : 0618662919
                   </a>
                 </address>
 

@@ -21,7 +21,7 @@
             alt="rénovation cuisine"
           ></v-img>
 
-          <v-card-title>Changement de menuiserie extérieur</v-card-title>
+          <v-card-title>Changement de menuiserie <br> extérieur</v-card-title>
 
           <v-card-text>
             <v-row align="center" class="mx-0">
@@ -75,7 +75,7 @@
           ></v-img>
 
           <v-card-title
-            >Réalisation d'une crépie + ravalement de façade</v-card-title
+            >ravalement de façade a la <br> taloché</v-card-title
           >
 
           <v-card-text>
@@ -125,7 +125,7 @@
           ></v-img>
 
           <v-card-title
-            >Rénvation et Ravalement de façade a la taloché</v-card-title
+            >Ravalement de façade a la <br> taloché</v-card-title
           >
           <v-card-text>
             <v-row align="center" class="mx-0">
@@ -175,7 +175,7 @@
             alt="rénovation cuisine"
           ></v-img>
 
-          <v-card-title>Rénovation 14 SDB dans un Hôtel **</v-card-title>
+          <v-card-title>Rénovation 14 SDB d'un <br> Hôtel **</v-card-title>
 
           <v-card-text>
             <v-row align="center" class="mx-0">

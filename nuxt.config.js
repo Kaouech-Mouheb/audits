@@ -100,6 +100,7 @@ export default {
   modules: [
 
     'bootstrap-vue/nuxt',
+    '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     'nuxt-robots',
     'nuxt-compress',
@@ -109,6 +110,11 @@ export default {
     'nuxt-ssr-cache',
 
   ],
+
+  axios: {
+    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    baseURL: '/',
+  },
 
 
   sitemap: {

@@ -1,60 +1,38 @@
 <template>
   <section>
-    <v-row>
-    <v-col cols="12" md="12">
-      <h1 class="h2">Les avis de nos clients</h1>
-    </v-col>
-    <v-col cols="12" md="2" sm="12">
-      <img src="avisverifer.png" class="avis" />
-    </v-col>
-    <v-col cols="12" md="10">
-      <div class="card-carousel-wrapper">
-        <div
-          class="card-carousel--nav__left"
-          @click="moveCarousel(-1)"
-          :disabled="atHeadOfList"
-        ></div>
-        <div class="card-carousel">
-          <div class="card-carousel--overflow-container">
-            <div
-              class="card-carousel-cards"
-              :style="{
+    <v-row class="p-4">
+      <v-col cols="12" md="12">
+        <h1 class="h2 text-success">Les avis de nos clients</h1>
+      </v-col>
+      <v-col cols="12" md="2" sm="12">
+        <img src="avisverifer.png" class="avis" />
+      </v-col>
+      <v-col cols="12" md="10">
+        <div class="card-carousel-wrapper">
+          <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
+          <div class="card-carousel">
+            <div class="card-carousel--overflow-container">
+              <div class="card-carousel-cards" :style="{
                 transform: 'translateX' + '(' + currentOffset + 'px' + ')',
-              }"
-            >
-              <div
-                class="card-carousel--card"
-                v-for="item in items"
-                :key="item.name"
-              >
-                <div class="card-carousel--card--footer">
-                  <v-avatar>
-                    <img :src="item.img" alt="avis Audits renovation" />
-                  </v-avatar>
-                  <p>{{ item.text }}</p>
-                  <p>{{ item.client }}</p>
-                  <p>{{ item.date }}</p>
-                  <v-rating
-                    :value="4.7"
-                    color="amber"
-                    dense
-                    half-increments
-                    readonly
-                    size="14"
-                  ></v-rating>
+              }">
+                <div class="card-carousel--card" v-for="item in items" :key="item.name">
+                  <div class="card-carousel--card--footer">
+                    <v-avatar>
+                      <img :src="item.img" alt="avis Audits renovation" />
+                    </v-avatar>
+                    <p>{{ item.text }}</p>
+                    <p>{{ item.client }}</p>
+                    <p>{{ item.date }}</p>
+                    <v-rating :value="4.7" color="amber" dense half-increments readonly size="14"></v-rating>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="card-carousel--nav__right" @click="moveCarousel(1)" :disabled="atEndOfList"></div>
         </div>
-        <div
-          class="card-carousel--nav__right"
-          @click="moveCarousel(1)"
-          :disabled="atEndOfList"
-        ></div>
-      </div>
-    </v-col>
-  </v-row>
+      </v-col>
+    </v-row>
   </section>
 </template>
 <script>
@@ -185,14 +163,17 @@ export default {
   margin: 20px 0 40px;
   color: #666a73;
 }
+
 .card-carousel {
   display: flex;
   justify-content: center;
   width: 95%;
 }
+
 .card-carousel--overflow-container {
   overflow: hidden;
 }
+
 .card-carousel--nav__left,
 .card-carousel--nav__right {
   display: inline-block;
@@ -206,28 +187,35 @@ export default {
   margin: 0 10px;
   transition: transform 150ms linear;
 }
+
 .card-carousel--nav__left[disabled],
 .card-carousel--nav__right[disabled] {
   opacity: 0.2;
   border-color: black;
 }
+
 .card-carousel--nav__left {
   transform: rotate(-135deg);
 }
+
 .card-carousel--nav__left:active {
   transform: rotate(-135deg) scale(0.9);
 }
+
 .card-carousel--nav__right {
   transform: rotate(45deg);
 }
+
 .card-carousel--nav__right:active {
   transform: rotate(45deg) scale(0.9);
 }
+
 .card-carousel-cards {
   display: flex;
   transition: transform 150ms ease-out;
   transform: translatex(0px);
 }
+
 .card-carousel-cards .card-carousel--card {
   margin: 0 10px;
   cursor: pointer;
@@ -238,12 +226,15 @@ export default {
   z-index: 3;
   margin-bottom: 2px;
 }
+
 .card-carousel-cards .card-carousel--card:first-child {
   margin-left: 0;
 }
+
 .card-carousel-cards .card-carousel--card:last-child {
   margin-right: 0;
 }
+
 .card-carousel-cards .card-carousel--card img {
   vertical-align: bottom;
   border-top-left-radius: 4px;
@@ -251,14 +242,17 @@ export default {
   transition: opacity 150ms linear;
   user-select: none;
 }
+
 .card-carousel-cards .card-carousel--card img:hover {
   opacity: 0.5;
 }
+
 .card-carousel-cards .card-carousel--card--footer {
   width: 200px;
   border-top: 0;
   padding: 7px 15px;
 }
+
 .card-carousel-cards .card-carousel--card--footer p {
   padding: 3px 0;
   margin: 0;
@@ -268,6 +262,7 @@ export default {
   color: #2c3e50;
   user-select: none;
 }
+
 .card-carousel-cards .card-carousel--card--footer p:nth-of-type(2) {
   font-size: 12px;
   font-weight: 300;
@@ -278,6 +273,7 @@ export default {
   margin-left: 4px;
   color: #666a73;
 }
+
 .card-carousel-cards .card-carousel--card--footer p:nth-of-type(2):before {
   content: "";
   float: left;
@@ -290,6 +286,7 @@ export default {
   border-style: solid;
   border-width: 12px 12px 12px 0;
 }
+
 .card-carousel-cards .card-carousel--card--footer p:nth-of-type(2):after {
   content: "";
   position: absolute;
@@ -302,6 +299,7 @@ export default {
   background: white;
   box-shadow: 0px 0px 0px #004977;
 }
+
 h2 {
   font-size: 3.6em;
   font-weight: 100;
@@ -309,11 +307,13 @@ h2 {
   margin-bottom: 0;
   color: #42b883;
 }
+
 .avis {
   widows: 200px;
   height: 200px;
   margin: 10px;
 }
+
 @media (max-width: 576px) {
   .avis {
     display: block;
@@ -337,12 +337,10 @@ h2 {
 }
 
 h2 {
-  background: linear-gradient(
-    to right,
-    hsl(216, 91%, 54%) 0,
-    hsl(0, 0%, 100%) 10%,
-    hsl(216, 91%, 54%) 20%
-  );
+  background: linear-gradient(to right,
+      hsl(216, 91%, 54%) 0,
+      hsl(0, 0%, 100%) 10%,
+      hsl(216, 91%, 54%) 20%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite linear;
@@ -352,13 +350,16 @@ h2 {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 600px;
   }
+
   100% {
     background-position: 900px;
   }
 }
+
 @media (max-width: 576px) {
   h2 {
     margin-top: 30px;

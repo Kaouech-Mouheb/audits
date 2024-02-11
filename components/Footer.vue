@@ -214,7 +214,7 @@ export default {
       },
       {
         name: "— Menuiseries, fenêtres, portes",
-        path: "",
+        path: "/changement-fenetre",
       },
 
       {

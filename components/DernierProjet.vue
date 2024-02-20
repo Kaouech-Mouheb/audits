@@ -38,10 +38,10 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon> 58 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon> 38 Euros TTC
             </div>
 
-            <div><v-icon>mdi-calendar-clock-outline</v-icon> 3 mois</div>
+            <div><v-icon>mdi-calendar-clock-outline</v-icon> 2 mois</div>
           </v-card-text>
 
           <v-divider class="mx-4"></v-divider>
@@ -94,7 +94,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon> 22500 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon> 17500 Euros TTC
             </div>
 
             <div><v-icon>mdi-calendar-clock-outline</v-icon> 2 mois</div>
@@ -144,7 +144,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon> 18 500 Euros TTC
+              <v-icon>mdi-currency-eur</v-icon> 14 500 Euros TTC
             </div>
 
             <div>
@@ -194,7 +194,7 @@
             </v-row>
 
             <div class="my-4 text-subtitle-1">
-              <v-icon>mdi-currency-eur</v-icon>8 200 Euros TTC Unité
+              <v-icon>mdi-currency-eur</v-icon>6 200 Euros TTC Unité
             </div>
 
             <div><v-icon>mdi-calendar-clock-outline</v-icon> 3 semaines</div>

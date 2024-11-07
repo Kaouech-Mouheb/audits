@@ -143,6 +143,17 @@ export default {
           content: this.isolation.url,
         },
       ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://auditsrenovation.fr/peinture/",
+        },
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico", // Assurez-vous que le chemin de l'icône est correct
+        },
+      ],
     };
   },
   data: () => ({

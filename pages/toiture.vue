@@ -3,7 +3,9 @@
     <v-container>
       <v-row>
         <v-col cols="12" md="12">
-          <h1 class="text-center text-primary">AUDITS rénovation, Rénovation de la toiture</h1>
+          <h1 class="text-center text-primary">
+            AUDITS rénovation, Rénovation de la toiture
+          </h1>
         </v-col>
       </v-row>
       <v-row justify="space-between">
@@ -66,7 +68,6 @@
               peuvent venir en complément d’une des autres techniques.
             </p>
           </section>
-
         </v-col>
         <v-col cols="12" md="4">
           <FormulaireDevis />
@@ -116,15 +117,25 @@ export default {
           content: this.toitureSeo.url,
         },
       ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://auditsrenovation.fr/toiture/",
+        },
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico", // Assurez-vous que le chemin de l'icône est correct
+        },
+      ],
     };
   },
   data: () => ({
     toitureSeo: {
-      title:
-        "Audits rénovation - Travaux de couverture",
+      title: "Audits rénovation - Travaux de couverture",
       description:
         "Audits rénovation intervient sur tous types de couverture Contactez nous pour un devis sur mesure. Entretien, Rénovation et Réparation de toiture Travail de qualité devis Gratuit. Audits rénovation siége : Choisy Le Roi",
-      url: "https://auditsrenovation.fr",
+      url: "https://auditsrenovation.fr/toiture/",
       img: require("~/static/isolation-toiture.jpg"),
     },
   }),
@@ -134,9 +145,9 @@ export default {
 .deperdition {
   max-width: 600px;
 }
-@media (max-width:575.98px){
-  .deperdition{
-      max-width: 300px;
+@media (max-width: 575.98px) {
+  .deperdition {
+    max-width: 300px;
   }
 }
 </style>

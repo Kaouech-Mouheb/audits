@@ -4,6 +4,10 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
+  server: {
+    port: 4000, // Vous pouvez spécifier le port que vous voulez ici
+    host: '0.0.0.0' // Vous pouvez également spécifier l'hôte, par exemple, pour écouter sur toutes les interfaces réseau
+  },
   target: 'static',
   router: {
     base: '/'

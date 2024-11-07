@@ -8,9 +8,7 @@
       <v-row class="mt-4">
         <v-col cols="12" md="8">
           <v-row justify="center">
-            <div
-
-            >
+            <div>
               <v-img
                 itemprop="image"
                 src="facade.jpg"
@@ -28,19 +26,12 @@
                 size="14"
               ></v-rating>
               <span class="text-secondary">
-                Basé sur <span>14</span> évaluations
-                d'utilisateurs
+                Basé sur <span>14</span> évaluations d'utilisateurs
               </span>
             </div>
             <hr />
-            <v-col
-              cols="12"
-              md="12"
-
-            >
-              <span
-                >Le ravalement ou la rénovation de façade</span
-              >
+            <v-col cols="12" md="12">
+              <span>Le ravalement ou la rénovation de façade</span>
               <span>
                 est une suite d'actions qui vise à remettre en état les murs
                 extérieurs de votre logement.
@@ -166,6 +157,17 @@ export default {
           hide: "twitter:site",
           name: "twitter:site",
           content: this.isolation.url,
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://auditsrenovation.fr/ravalement/",
+        },
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico", // Assurez-vous que le chemin de l'icône est correct
         },
       ],
     };

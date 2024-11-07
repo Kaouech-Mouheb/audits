@@ -147,6 +147,17 @@ export default {
           content: this.isolation.url,
         },
       ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://auditsrenovation.fr/renovationcuisine/",
+        },
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico", // Assurez-vous que le chemin de l'icône est correct
+        },
+      ],
     };
   },
   data: () => ({
@@ -155,7 +166,7 @@ export default {
       description:
         "Vous avez un projet de rénovation de cuisine, une rénovation partielle de cuisine ou la rénovation compléte de votre cuisine. Audits rénovation vous accompagne dans votre projet. ",
 
-      url: "https://auditsrenovation.fr/renovation-dappartement/",
+      url: "https://auditsrenovation.fr/renovationcuisine/",
     },
   }),
 };

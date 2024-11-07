@@ -160,6 +160,17 @@ export default {
           content: this.isolation.url,
         },
       ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://auditsrenovation.fr/renovation-façade/",
+        },
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico", // Assurez-vous que le chemin de l'icône est correct
+        },
+      ],
     };
   },
   data: () => ({
@@ -168,7 +179,7 @@ export default {
       description:
         "Entreprise de ravalement de façade | Un projet de rénovation de façade, ravelement de façade ou nettoyage de façade, Audits rénovation mets à votre disposition une équipe dédiée",
 
-      url: "https://auditsrenovation.fr/ravalement/",
+      url: "https://auditsrenovation.fr/renovation-façade/",
     },
   }),
 };

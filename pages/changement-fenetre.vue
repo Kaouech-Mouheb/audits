@@ -1,6 +1,5 @@
 <template>
   <v-container>
-   
     <h1 class="text-center h3 text-primary mt-4 mb-4">
       Rénovez la menuiserie de votre maison et donnez-lui une nouvelle allure
     </h1>
@@ -232,7 +231,7 @@
         </section>
       </v-col>
     </v-row>
-    <v-row> <Footer />> </v-row>
+    <v-row> <Footer /> </v-row>
   </v-container>
 </template>
 <script>
@@ -269,6 +268,17 @@ export default {
           hide: "twitter:site",
           name: "twitter:site",
           content: this.isolation.url,
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://auditsrenovation.fr/changement-fenetre/",
+        },
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico", // Assurez-vous que le chemin de l'icône est correct
         },
       ],
     };

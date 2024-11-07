@@ -13,7 +13,7 @@
           </div>
 
           <hr />
-          <v-btn color="success" to="/renovation"> En savoir plus </v-btn>
+          <v-btn color="success" to="/a-propos-auditsrenovation"> En savoir plus </v-btn>
 
             <v-card height="220px" class="mt-2">
               <v-card-title> Coordonnées de contact </v-card-title>

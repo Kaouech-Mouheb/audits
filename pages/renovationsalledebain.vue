@@ -146,6 +146,17 @@ export default {
           content: this.isolation.url,
         },
       ],
+      link: [
+      {
+        rel: 'canonical',
+        href: "https://auditsrenovation.fr/renovationsalledebain/",
+      },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico', // Assurez-vous que le chemin de l'icône est correct
+      },
+    ],
     };
   },
   data: () => ({
@@ -154,7 +165,7 @@ export default {
       description:
         "Vous avez un projet de rénovation de salle de bain, une rénovation partielle de salle de bain ou la rénovation rénovation compléte de votre salle de bain. Audits rénovation vous accompagne dans votre projet. ",
 
-      url: "https://auditsrenovation.fr/renovation-dappartement/",
+      url: "https://auditsrenovation.fr/renovationsalledebain/",
     },
   }),
 };
